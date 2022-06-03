@@ -6,10 +6,10 @@ import Logo from '../images/logo.png';
 export default function NavBar() {
   return (
     <>
-      <nav className="nav-bar">
-        <ul>
+      <nav className="nav-bar" >
+        <ul style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
           <li>
-            <Link to="/"><img className="logo" src={Logo} alt="Logo" /> Home</Link>
+            <Link to="/"><img src={Logo} style={{width: "30%"}} className="logo" alt="Logo" /></Link>
           </li>
           <li>
             <Link to="search"> Search</Link>
