@@ -10,6 +10,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
 import {Grid,Box, InputBase} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import exp1 from "./src/images/exp1.png";
 
 export default function Experiences () {
 
@@ -51,7 +52,7 @@ export default function Experiences () {
         <CardMedia
           component="img"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          img src={exp1}
           alt="green iguana"
         />
         <CardContent>

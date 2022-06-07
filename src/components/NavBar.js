@@ -4,6 +4,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
 import {Grid,Box, InputBase} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+
+
+
 export default function NavBar() {
   return (
     <>
@@ -33,7 +36,6 @@ export default function NavBar() {
       </nav>
      
       </Grid>
-
     </>
   );
 }
