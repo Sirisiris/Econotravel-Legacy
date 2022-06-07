@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
@@ -7,32 +7,33 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function NavBar() {
   return (
     <>
-    <Grid container style={{width: "100vw", backgroundColor: '#fbf1e3'}}>
+    <Grid container style={{backgroundColor: '#fbf1e3'}}>
       
-      <nav style={{width:"100vw", display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-around"}}>
+      <nav style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-between"}}>
          
-            <Grid item lg={2}>
-            <Link to="/"><img src={Logo} style={{width: "40%", height:"40%"}} className="logo" alt="Logo"/></Link>
+            <Grid item lg={4}>
+            <Link to="/"><img src={Logo} style={{width: "30%", height:"30%"}} className="logo" alt="Logo"/></Link>
             </Grid>
             
+            <Grid item lg={6}>
             <Link to="search"></Link>
-            <Box style={{ paddingLeft: "-4em", backgroundColor: '#b5bea7', display: 'flex', borderRadius: '50px', width: '60%', minWidth: '15rem'}}>
-            <SearchIcon style={{paddingLeft: '0.5rem'}}/>
+            <Box style={{paddingLeft: "4em", backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem'}}>
+            <SearchIcon/>
             <InputBase
               placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}/>
+              inputProps={{'aria-label': 'search' }}/>
               </Box>
-          
-           <Grid item>
-            <Link style={{color:"#2e5137"}} to="login"><AccountCircleIcon /> Login</Link>
+          </Grid>
+           <Grid item lg={2} style={{display:"flex", paddingLeft:"10em"}}>
+            <Link style={{color:"#2e5137" }} to="login"><AccountCircleIcon /> Login</Link>
         
         
-            <Link  to="shopping" style={{color:"#2e5137"}}><ShoppingCartIcon /> Shopping</Link>
+            <Link  to="shopping" style={{color:"#2e5137", paddingLeft:"1em"}}><ShoppingCartIcon /> Shopping</Link>
          </Grid>
       </nav>
      
       </Grid>
-      <Outlet />
+
     </>
   );
 }
