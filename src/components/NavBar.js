@@ -15,7 +15,7 @@ export default function NavBar() {
       <nav style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-between"}}>
          
             <Grid item lg={4}>
-            <Link to="/"><img src={Logo} style={{width: "30%", height:"30%"}} className="logo" alt="Logo"/></Link>
+            <Link to="/"><img src={Logo} style={{width: "30%", height:"30%", minWidth:"40px"}} className="logo" alt="Logo"/></Link>
             </Grid>
             
             <Grid item lg={6}>

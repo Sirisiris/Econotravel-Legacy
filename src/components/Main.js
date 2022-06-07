@@ -29,6 +29,7 @@ export default function Main() {
               width: "15rem",
               height: "3rem",
               borderRadius: "50px",
+              color: "white"
             }}
           >
             Reserva ahora
@@ -116,7 +117,7 @@ export default function Main() {
               width: "15rem",
               height: "3rem",
               borderRadius: "50px",
-              marginTop: "2rem"}}>Registrate ahora</Button>
+              marginTop: "2rem",color:"white"}}>Registrate ahora</Button>
         </Box>
       </section>
     </main>
