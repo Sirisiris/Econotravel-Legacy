@@ -7,7 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function NavBar() {
   return (
     <>
-    <Grid container style={{width: "100vw", backgroundColor: '#fbf1e3'}}>
+    <Grid container style={{backgroundColor: '#fbf1e3'}}>
       
       <nav style={{width:"100vw", display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-around"}}>
          
