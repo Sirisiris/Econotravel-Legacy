@@ -1,9 +1,7 @@
-
 import './App.css';
 import {BrowserRouter} from "react-router-dom";
 import Router from './Routes';
 import NavBar from './components/NavBar';
-
 function App() {
   return (
     <BrowserRouter>
@@ -14,5 +12,4 @@ function App() {
     </BrowserRouter>
   );
 }
-
 export default App;
