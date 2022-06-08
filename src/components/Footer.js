@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Box, TableFooter } from "@mui/material";
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -11,6 +12,7 @@ export default function Footer() {
       }}
     >
       <Box style={{ display: "flex", gap: "3rem" }}>
+        <Link to="/comofunciona">
         <Button
           style={{
             color: "#faf0e3",
@@ -22,6 +24,7 @@ export default function Footer() {
         >
           ¿Cómo funciona?
         </Button>
+        </Link>
         <Button
           style={{
             color: "#faf0e3",
