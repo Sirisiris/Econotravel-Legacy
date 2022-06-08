@@ -40,10 +40,6 @@ export default function Experiences () {
           </nav>
          
         
-
-    
-      
-     
       
       <Container style={{ marginTop:"6em"}}>
       
@@ -52,12 +48,11 @@ export default function Experiences () {
         height="381"
           alt="bike"></img>
         <Box>
-        <Chip label="Chip Outlined" variant="outlined" style={{width:"80px",height:"25px"}}/>
-        <Chip label="Chip Outlined" variant="outlined"style={{width:"80px", height:"25px", marginLeft:"0.5em"}} />
-        <Chip label="Chip Outlined" variant="outlined" style={{width:"80px",height:"25px", marginLeft:"0.5em"}}/>
+        <Chip label="Montaña" variant="outlined" style={{width:"80px",height:"25px"}}/>
+        <Chip label="Bici" variant="outlined"style={{width:"80px", height:"25px", marginLeft:"0.5em"}} />
+        <Chip label="2 horas" variant="outlined" style={{width:"80px",height:"25px", marginLeft:"0.5em"}}/>
         <h1 style={{fontSize:"1.2em", color:"#2e5137", marginTop:"1em"}}>Montaña</h1>
         <h2 style={{fontSize:"1em",fontWeight:"200", color:"#2e5137" }} >250€/persona</h2>
-       
         
         </Box>
         <Button style={{

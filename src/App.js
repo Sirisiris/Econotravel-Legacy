@@ -12,7 +12,7 @@ function App() {
         <NavBar />
        
          <Main/>
-         <Experiences/>
+  
          </div>
     </BrowserRouter>
 
