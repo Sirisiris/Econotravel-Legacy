@@ -29,14 +29,10 @@ export default function Main() {
               width: "15rem",
               height: "3rem",
               borderRadius: "50px",
-<<<<<<< HEAD
-              color: "white"
-=======
               color: "#FBF1E3",
               textTransform: "capitalize",
               fontSize: "1.5rem",
               fontWeight: "200",
->>>>>>> a4554408bd5af9cd70ec5a161c6ec29ce6c9dde3
             }}
           >
             Reserva ahora
@@ -144,9 +140,6 @@ export default function Main() {
               width: "20rem",
               height: "3rem",
               borderRadius: "50px",
-<<<<<<< HEAD
-              marginTop: "2rem",color:"white"}}>Registrate ahora</Button>
-=======
               marginTop: "2rem",
               color: "#FBF1E3",
               textTransform: "capitalize",
@@ -156,7 +149,6 @@ export default function Main() {
           >
             Registrate ahora
           </Button>
->>>>>>> a4554408bd5af9cd70ec5a161c6ec29ce6c9dde3
         </Box>
       </section>
     </main>
