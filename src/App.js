@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import QuienesSomos from './components/QuienesSomos';
+import Experiences from './components/Experiences.js';
 
 function App() {
   return (
@@ -11,9 +12,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar />
-      </div> 
+       
          <Main/>
          <Footer />
+  
+         </div>
     </BrowserRouter>
  
   );
