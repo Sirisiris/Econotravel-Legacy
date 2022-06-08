@@ -2,6 +2,7 @@ import './App.css';
 import {BrowserRouter} from "react-router-dom";
 import NavBar from './components/NavBar';
 import Main from './components/Main';
+import Experiences from './components/Experiences.js';
 
 function App() {
   return (
@@ -9,8 +10,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <NavBar />
-      </div> 
+       
          <Main/>
+  
+         </div>
     </BrowserRouter>
 
   );
