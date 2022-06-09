@@ -28,7 +28,7 @@ export default function NavBar() {
               </Box>
           </Grid>
            <Grid item lg={2} style={{display:"flex", paddingLeft:"10em"}}>
-            <Link style={{color:"#2e5137" }} to="/login"><AccountCircleIcon /> Login</Link>
+            <Link to="/login" style={{color:"#2e5137" }} ><AccountCircleIcon /> Login</Link>
         
         
             <Link  to="shopping" style={{color:"#2e5137", paddingLeft:"1em"}}><ShoppingCartIcon /> Shopping</Link>

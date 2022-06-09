@@ -3,6 +3,7 @@ import { Box, Button, Typography, Grid } from "@mui/material";
 import hero1 from "../images/hero-image1.png";
 import travel from "../images/travel.png";
 import hero2 from "../images/hero-image2.png";
+import { Link } from "react-router-dom";
 
 export default function Main() {
   return (
@@ -23,6 +24,7 @@ export default function Main() {
             alignItems: "center",
           }}
         >
+          <Link to="/experiences">
           <Button
             style={{
               backgroundColor: "#2e5137",
@@ -37,6 +39,7 @@ export default function Main() {
           >
             Reserva ahora
           </Button>
+          </Link>
         </Box>
       </section>
 
@@ -88,6 +91,7 @@ export default function Main() {
             in viverra quam etiam eget posuere enim, at blandit enim. Integer
             egestas nec risus ut viverra.
           </Typography>
+          <Link to="/nosotros">
           <Button
             style={{
               border: "2.5px solid #FBF1E3",
@@ -103,6 +107,8 @@ export default function Main() {
           >
             Contáctanos
           </Button>
+          </Link>
+          
         </Box>
         </Grid>
         </Grid>
@@ -137,6 +143,7 @@ export default function Main() {
             No te lo pierdas, regístrate hoy y recibe un 25% de descuento en tu
             próxima experiencia
           </Typography>
+          <Link to="/register">
           <Button
             style={{
               backgroundColor: "#2e5137",
@@ -152,6 +159,8 @@ export default function Main() {
           >
             Registrate ahora
           </Button>
+          </Link>
+          
         </Box>
       </section>
     </main>

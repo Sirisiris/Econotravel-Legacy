@@ -1,11 +1,8 @@
 import './App.css';
 import {BrowserRouter} from "react-router-dom";
 import NavBar from './components/NavBar';
-import Main from './components/Main';
+import Router from './Routes';
 import Footer from './components/Footer';
-import QuienesSomos from './components/QuienesSomos';
-import Experiences from './components/Experiences.js';
-import Experiencedetail from "./components/Experiencedetail.js";
 
 function App() {
   return (
@@ -14,8 +11,9 @@ function App() {
       <div className="App">
         <NavBar />
        
-         <Main/>
-         <Footer />
+        <Router />
+
+        <Footer />
   
          </div>
     </BrowserRouter>

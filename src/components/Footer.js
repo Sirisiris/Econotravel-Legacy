@@ -25,6 +25,7 @@ export default function Footer() {
           ¿Cómo funciona?
         </Button>
         </Link>
+        <Link to="/nosotros">
         <Button
           style={{
             color: "#faf0e3",
@@ -36,6 +37,8 @@ export default function Footer() {
         >
           ¿Quienes somos?
         </Button>
+        </Link>
+        <Link to="/mediospago">
         <Button
           style={{
             color: "#faf0e3",
@@ -47,6 +50,8 @@ export default function Footer() {
         >
           Medios de pago
         </Button>
+        </Link>
+        
       </Box>
     </TableFooter>
   );
