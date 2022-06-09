@@ -4,3 +4,19 @@
   text-decoration: none;
   list-style: none;
 }
+
+.input-login{
+  color: #2e5137;
+  background-color:#d8e4db;
+  border: 1.5px solid #2e5137;
+  border-radius: 20px;
+  padding: 0.3rem
+}
+
+.cover{
+  height: auto;
+  max-width: 100%;
+}
+.span-login{
+  font-weight: bold;
+}

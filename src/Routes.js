@@ -15,7 +15,7 @@ export default function Router() {
       },
       {
         element: <Login />,
-        path: "login"
+        path: "/login"
       }
     ]);
   
