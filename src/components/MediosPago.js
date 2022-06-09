@@ -11,15 +11,14 @@ export default function MediosPago() {
                  fontSize: "3rem", 
                  fontWeight: "300", 
                  color: "#2e5137",
-                 textTransform: "uppercase",
+                 fontFamily: "Next Southerland Serif DEMO",
                  padding: "1.5em" }}>
                      Medios de pago
                 </Typography>
                 <Typography
-                variant="p"
+                variant="body1"
                 style={{ 
-                    fontSize: "1.2rem", 
-                    fontWeight: "300", 
+
                     color: "#2e5137"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis nec est sed posuere. Phasellus tempor a nibh ut scelerisque. Vestibulum in fringilla tellus, a finibus ligula. Maecenas dapibus tortor ut est mattis, scelerisque hendrerit lacus fringilla. Vivamus auctor interdum odio, in hendrerit enim dapibus ac. Mauris vehicula risus libero, rhoncus scelerisque lectus varius ac. Nulla sodales ipsum quam, non dictum neque condimentum sit amet. Vestibulum luctus scelerisque metus sit amet posuere.<br></br>
 

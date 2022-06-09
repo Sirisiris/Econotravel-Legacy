@@ -26,7 +26,7 @@ export default class Login extends Component {
                fontSize: "2.5rem", 
                fontWeight: "300", 
                color: "#2e5137",
-               textTransform: "uppercase",
+               fontFamily: "Next Southerland Serif DEMO",
                marginBottom: "1em" }}
             >
               Travel any corner of Barcelona with Us
