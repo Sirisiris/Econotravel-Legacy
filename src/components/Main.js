@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, Grid } from "@mui/material";
 import hero1 from "../images/hero-image1.png";
 import travel from "../images/travel.png";
 import hero2 from "../images/hero-image2.png";
@@ -60,14 +60,15 @@ export default function Main() {
       </section>
 
       {/* -------------- Sección 3 Texto Travel + Botón de contacto ------------- */}
-
       <section
         className="Travel"
         style={{ backgroundColor: "#498057", padding: "3rem", display: "flex" }}
       >
-        <Box>
-          <img src={travel} alt="" />
-        </Box>
+        <Grid container>
+          <Grid items xs={12} md={6} lg={6}>
+          <img src={travel} alt="" style={{maxWidth: "100%", height: "auto"}}/> 
+        </Grid>
+        <Grid items xs={12} md={6} lg={6}>
         <Box style={{ padding: "5rem", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around"}}>
           <Typography variant="h2" color="#FBF1E3">
             Travel any corner of Barcelona with Us
@@ -103,6 +104,8 @@ export default function Main() {
             Contáctanos
           </Button>
         </Box>
+        </Grid>
+        </Grid>
       </section>
 
       {/* -------------- Sección 4 Hero con botón de registro ------------- */}
@@ -129,7 +132,7 @@ export default function Main() {
           <Typography
             variant="h3"
             color="#FBF1E3"
-            style={{ width: "40rem", textAlign: "center" }}
+            style={{ maxWidth: "50%", height: "auto", textAlign: "center" }}
           >
             No te lo pierdas, regístrate hoy y recibe un 25% de descuento en tu
             próxima experiencia

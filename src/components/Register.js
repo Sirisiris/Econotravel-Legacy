@@ -3,7 +3,7 @@ import { Grid, Button, Typography } from "@mui/material";
 import experiencia0 from "../images/experiencia0.png";
 
 
-export default class Login extends Component {
+export default class Register extends Component {
   render() {
     return (
       <>
@@ -68,11 +68,25 @@ export default class Login extends Component {
                   fontSize: "1.3rem",
                   fontWeight: "300",
                   display: "block",
+                  margin: "0.2em"
+                }}
+              >
+                Email
+              </Typography>
+              <input label="Password" className="input-login" />
+              <Typography
+                variant="p"
+                style={{
+                  color: "#2e5137",
+                  width: "30rem",
+                  fontSize: "1.3rem",
+                  fontWeight: "300",
+                  display: "block",
                   fontStyle: "italic",
                   margin: "0.2em"
                 }}
               >
-                Haz click <span className="span-login">aquí</span> si todavía no te has registrado
+                Haz click <span className="span-login">aquí</span> si ya estas registrado
               </Typography>
               <div>
                 <Button
@@ -89,7 +103,7 @@ export default class Login extends Component {
                     margin: "1.3em"
                   }}
                 >
-                  Login
+                  Register
                 </Button>
               </div>
             </div>
