@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Button, Typography } from "@mui/material";
 import experiencia0 from "../images/experiencia0.png";
-
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
   render() {
@@ -72,7 +72,7 @@ export default class Login extends Component {
                   margin: "0.2em"
                 }}
               >
-                Haz click <span className="span-login">aquí</span> si todavía no te has registrado
+                Haz click <Link to="/register"><span className="span-login">aquí</span></Link> si todavía no te has registrado
               </Typography>
               <div>
                 <Button
