@@ -4,19 +4,19 @@ import {Grid,Box} from "@mui/material";
 
 import exp1 from "../images/exp1.png";
 
+
+
+
 export default function Experiences () {
 
 
     return (
 
-        <>
+  
         <Grid container style= {{ backgroundColor: '#fbf1e3'}}>
-          
-          
-         
-        
+            
       
-      <Container style={{ marginTop:"6em"}}>
+      <Container style={{ marginTop:"6em" }}>
       
         <img src={exp1}
         width= "249"
@@ -41,12 +41,6 @@ export default function Experiences () {
         
 
 
-     </>
-
-    
-      
-    
-      
       
       );
     }
