@@ -4,16 +4,16 @@ import { Typography, Grid, Box} from "@mui/material";
 
 export default function ComoFunciona() {
   return (
-    <section style={{backgroundColor: "#fbf1e4", display: "flex", alignItems: "center"}}>
+    <section style={{backgroundColor: "#fbf1e4", display: "flex", alignItems: "center", height: "88.1vh"}}>
       <Grid container>
           <Grid item xs={4}>
-          <img src={fundadora} alt="" style={{width: "100%", height: "100%", objectFit: "contain"}}/>
+          <img src={fundadora} alt="" style={{width: "100%", height: "100%", objectFit: "contain", paddingLeft: "5rem"}}/>
           </Grid>
           <Grid item xs={8} style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-        <Typography variant="h1" color="#2e5137" style={{paddingBottom: "3rem"}}>
-          Nuestra Misión<br />
+        <Typography variant="h2" color="#2e5137" style={{paddingBottom: "3rem", fontFamily: "Next Southerland Serif DEMO"}}>
+          Nosotras<br />
         </Typography>
-        <Typography variant="body1" color="#2e5137" style={{width: "40rem", textAlign: "center"}}>
+        <Typography variant="body1" color="#2e5137" style={{width: "30rem"}}>
           Nuestra empresa se fundó a raíz de un viaje que nuestra
           fundadora, Marina Herrán, realizó en bicicleta por Cataluña en el
           verano de 2001.
