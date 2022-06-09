@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Button,Container, Chip } from '@mui/material';
-import {Grid,Box, InputBase} from "@mui/material";
+import {Grid,Box} from "@mui/material";
+
 import exp1 from "../images/exp1.png";
 
 
@@ -10,8 +11,10 @@ export default function Experiences () {
 
 
     return (
+
   
-      <Grid container style= {{backgroundColor:"#FBF1E3"}}>
+        <Grid container style= {{ backgroundColor: '#fbf1e3'}}>
+            
       
       <Container style={{ marginTop:"6em" }}>
       
@@ -35,6 +38,8 @@ export default function Experiences () {
     
 </Container>
 </Grid>
+        
+
 
       
       );

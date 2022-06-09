@@ -4,6 +4,7 @@ import hero1 from "../images/hero-image1.png";
 import travel from "../images/travel.png";
 import hero2 from "../images/hero-image2.png";
 import { Link } from "react-router-dom";
+import BasicTabs from "./TabsMain";
 
 export default function Main() {
   return (
@@ -60,6 +61,7 @@ export default function Main() {
         <Typography variant="h5" color="#2e5137">
           Ubicación - Transporte - Duración
         </Typography>
+        <BasicTabs />
       </section>
 
       {/* -------------- Sección 3 Texto Travel + Botón de contacto ------------- */}
