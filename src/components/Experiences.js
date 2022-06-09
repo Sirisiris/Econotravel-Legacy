@@ -1,28 +1,28 @@
 import * as React from 'react';
 import { Button,Container, Chip } from '@mui/material';
 import {Grid,Box} from "@mui/material";
-
 import exp1 from "../images/exp1.png";
-
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 
 export default function Experiences () {
 
-
-    return (
-
+ 
+  return (
   
         <Grid container style= {{ backgroundColor: '#fbf1e3'}}>
             
       
       <Container style={{ marginTop:"6em" }}>
-      
+    
+
         <img src={exp1}
         width= "249"
         height="381"
           alt="bike"></img>
-        <Box>
+        <Box style={{marginTop:"0.5em"}}>
         <Chip label="Montaña" variant="outlined" style={{width:"80px",height:"25px"}}/>
         <Chip label="Bici" variant="outlined"style={{width:"80px", height:"25px", marginLeft:"0.5em"}} />
         <Chip label="2 horas" variant="outlined" style={{width:"80px",height:"25px", marginLeft:"0.5em"}}/>
@@ -38,7 +38,7 @@ export default function Experiences () {
     
 </Container>
 </Grid>
-        
+
 
 
       
