@@ -74,14 +74,14 @@ export default function Main() {
         style={{ backgroundColor: "#498057", padding: "3rem", display: "flex" }}
       >
         <Grid container>
-          <Grid items xs={12} md={6} lg={6}>
+          <Grid items xs={12} md={5} lg={5}>
             <img
               src={travel}
               alt=""
               style={{ maxWidth: "100%", height: "auto" }}
             />
           </Grid>
-          <Grid items xs={12} md={6} lg={6}>
+          <Grid items xs={12} md={7} lg={7}>
             <Box
               style={{
                 padding: "5rem",
@@ -91,7 +91,7 @@ export default function Main() {
                 justifyContent: "space-around",
               }}
             >
-              <Typography variant="h3" color="#FBF1E3" style={{ fontFamily: "Next Southerland Serif DEMO", paddingBottom: "3 rem" }}>
+              <Typography variant="h3" color="#FBF1E3" style={{ fontFamily: "Next Southerland Serif DEMO" }}>
                 Travel any corner of Barcelona with Us
               </Typography>
               <Typography
@@ -100,6 +100,8 @@ export default function Main() {
                 style={{
                   fontSize: "1.3rem",
                   fontWeight: "300",
+                  paddingTop: "5rem",
+                  lineHeight: "32px"
                 }}
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -124,9 +126,10 @@ export default function Main() {
                   style={{
                     border: "2.5px solid #FBF1E3",
                     color: "#FBF1E3",
-                    marginTop: "7rem",
+                    marginTop: "8rem",
                     textTransform: "capitalize",
-                    width: "12rem",
+                    width: "15rem",
+                    height: "5rem",
                     padding: "0.3rem",
                     borderRadius: "50px",
                     fontSize: "1.6rem",
