@@ -10,7 +10,6 @@ import exp1 from "../images/exp1.png";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import { height } from '@mui/system';
 import { Select } from '@mui/material'; 
 
 
@@ -55,7 +54,6 @@ export default function Experiencedetail () {
           <Container>
 
         
-         
           <Tabs>
           <Tab label="Home" style={{textTransform:"none"}}/>
          <Tab label="Montaña" style={{textTransform:"none"}}/>

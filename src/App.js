@@ -13,7 +13,7 @@ function App() {
         <NavBar />
        
          <Main/>
-      <Experiencedetail/>
+      
          </div>
     </BrowserRouter>
 
