@@ -1,13 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import {
-  Typography,
-  Box,
-  Tab,
-  Tabs,
-  Button,
-  Chip,
-} from "@mui/material";
+import { Typography, Box, Tab, Tabs, Button, Chip } from "@mui/material";
 import exp1 from "../images/exp1.png";
 import exp2 from "../images/exp2.png";
 import exp3 from "../images/exp3.png";
@@ -68,22 +61,35 @@ export default function BasicTabs() {
         alignItems: "center",
       }}
     >
-      <Box sx={{ borderBottom: 1, borderColor: "divider"}}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example" TabIndicatorProps={{style: {background:'#2e5137'}}}
+          aria-label="basic tabs example"
+          TabIndicatorProps={{ style: { background: "#2e5137" } }}
         >
-          <Tab label="Ubicación" {...a11yProps(0)} style={{fontSize: "1.5rem"}}/>
-          <Tab label="Transporte" {...a11yProps(1)} style={{fontSize: "1.5rem"}}/>
-          <Tab label="Duración" {...a11yProps(2)} style={{fontSize: "1.5rem"}} />
+          <Tab
+            label="Ubicación"
+            {...a11yProps(0)}
+            style={{ fontSize: "1.5rem" }}
+          />
+          <Tab
+            label="Transporte"
+            {...a11yProps(1)}
+            style={{ fontSize: "1.5rem" }}
+          />
+          <Tab
+            label="Duración"
+            {...a11yProps(2)}
+            style={{ fontSize: "1.5rem" }}
+          />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
         <Box style={{ display: "flex" }}>
           {/* ---------------------------------------- Ubicación ----------------------------------------------- */}
 
-          <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp1} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -137,7 +143,7 @@ export default function BasicTabs() {
             </Button>
           </Box>
 
-          <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp2} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -160,7 +166,7 @@ export default function BasicTabs() {
                   fontSize: "1.2em",
                   color: "#2e5137",
                   marginTop: "1em",
-                  textAlign: "left"
+                  textAlign: "left",
                 }}
               >
                 Descubre la costa en barco de vela
@@ -190,7 +196,7 @@ export default function BasicTabs() {
               Reserva ahora
             </Button>
           </Box>
-          <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp3} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -249,8 +255,7 @@ export default function BasicTabs() {
         {/* --------------------------------------- Transporte --------------------------------- */}
 
         <Box style={{ display: "flex" }}>
-
-        <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp4} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -304,7 +309,7 @@ export default function BasicTabs() {
             </Button>
           </Box>
 
-          <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp5} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -358,7 +363,7 @@ export default function BasicTabs() {
             </Button>
           </Box>
 
-          <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp6} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -411,16 +416,13 @@ export default function BasicTabs() {
               Reserva ahora
             </Button>
           </Box>
-
         </Box>
       </TabPanel>
       <TabPanel value={value} index={2}>
         {/* ---------------------------------------- Duración ---------------------- */}
 
         <Box style={{ display: "flex" }}>
-
-
-        <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp7} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -474,8 +476,7 @@ export default function BasicTabs() {
             </Button>
           </Box>
 
-
-          <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp8} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -529,8 +530,7 @@ export default function BasicTabs() {
             </Button>
           </Box>
 
-
-          <Box style={{ margin: "1rem" }}>
+          <Box style={{ margin: "2rem" }}>
             <img src={exp9} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
@@ -583,7 +583,6 @@ export default function BasicTabs() {
               Reserva ahora
             </Button>
           </Box>
-
         </Box>
       </TabPanel>
     </Box>

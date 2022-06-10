@@ -13,7 +13,8 @@ export default class Register extends Component {
           style={{ 
             backgroundColor: "#fbf1e3",
             textAlign: "center",
-            padding: "1em"
+            padding: "1em",
+            height: "86.3vh",
          }}
           direction="row"
           justifyContent="center"

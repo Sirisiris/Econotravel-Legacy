@@ -4,7 +4,7 @@ import { Typography } from "@mui/material";
 export default function ComoFunciona() {
     return (
         <>
-            <div className="div-como">
+            <div className="div-como" style={{height: "77.7vh"}}>
                 <Typography 
                 variant="h2"
                 style={{ 
