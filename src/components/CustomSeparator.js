@@ -33,7 +33,7 @@ export default function CustomSeparator() {
     <Stack spacing={2}>
       
       <Breadcrumbs
-        separator={<NavigateNextIcon fontSize="small" />}
+        separator= {<NavigateNextIcon fontSize="small"/>}  
         aria-label="breadcrumb"
       >
         {breadcrumbs}
