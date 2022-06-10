@@ -3,7 +3,6 @@ import { Button,Container, Chip } from '@mui/material';
 import {Grid,Box} from "@mui/material";
 import exp1 from "../images/exp1.png";
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 
