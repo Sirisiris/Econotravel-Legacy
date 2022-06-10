@@ -122,7 +122,7 @@ export default function FormularioReserva () {
     
                       {/*Container Pagar*/}
 
-            <Container style= {{ display:"flex", flexDirection:"column", border: "2px solid #2e5137", width:"20em", height:"22em", marginTop:"-5em"}}>
+            <Container style= {{ display:"flex", flexDirection:"column", border: "2px solid #2e5137", width:"20em", height:"23em", marginTop:"-5em"}}>
   
 
                <Typography variant='h2' color=" #2e5137" fontSize="1.5em"fontWeight="700" style={{marginTop:"1em"}}>250€</Typography>
@@ -143,9 +143,9 @@ export default function FormularioReserva () {
               Pagar
              </Button> 
     
-            <Container>
+            <Container style={{margin:"auto"}}>
                   
-                  <Box style={{display:"flex", marginTop:"1em"}}>
+                  <Box style={{display:"flex"}}>
                     <CheckCircleOutlineIcon/>
                     <Typography variant="h3" fontSize="1em" fontWeight="200">99% de clientes salisfechos</Typography>
                   </Box>
