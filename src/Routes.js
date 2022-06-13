@@ -6,6 +6,8 @@ import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
 import MediosPago from './components/MediosPago'
+import ExperienceDetail from "./components/Experiencedetail";
+import FormularioReserva from './components/FormularioReserva';
 
 export default function Router() {
     let element = useRoutes([
@@ -36,6 +38,14 @@ export default function Router() {
       {
         element: <Register />,
         path: "/register"
+      },
+      {
+        element: <ExperienceDetail />,
+        path: "/experiencedetail"
+      },
+      {
+        element: <FormularioReserva />,
+        path: "/reserva"
       }
     ]);
   
