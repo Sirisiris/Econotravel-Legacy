@@ -1,10 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Typography, Box, Tab, Tabs, Button, Chip } from "@mui/material";
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-=======
->>>>>>> 6907c215201a6747a93cb25f2ad91b1bcf70fcbd
 import exp1 from "../images/exp1.png";
 import exp2 from "../images/exp2.png";
 import exp3 from "../images/exp3.png";
