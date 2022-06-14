@@ -9,7 +9,7 @@ import BasicTabs from "./TabsMain";
 export default function Main() {
   return (
     <main>
-      {/* -------------- Sección 1 Hero Image ------------- */}
+      {/* < !-------------- Sección 1 Hero Image -------------> */}
       <section className="Hero">
         <Box
           style={{

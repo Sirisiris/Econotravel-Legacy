@@ -3,43 +3,28 @@ import { Button,Container, Chip } from '@mui/material';
 import {Grid,Box} from "@mui/material";
 import { useEffect,useState } from 'react';
 import axios from "axios";
-
+import { useSearchParams } from 'react-router-dom';
 
 export default function ExperiencesList (){
+
+  const [searchParams,setSearchParams ]=useSearchParams()
+  const searchTerm= searchParams.get ("input"||"")
 
   
   const [data, setData]=useState([]);
     
   useEffect (()=>{
-    axios.get ("http://localhost:3002/experiences")
+    axios.get (`${process.env.REACT_APP_URL}/experiences`)
     .then (response=> {
-      console.log (response)
-      setData (response.data)
+      console.log (searchTerm)
+      setData (response.data.filter(e=>e.title.toLowerCase().includes(searchTerm)))
     })
-  },[])
+  },[searchTerm])
 
-  console.log (data)
-<<<<<<< HEAD
-  
-=======
-
-/*
-return (
  
-<div className='Catalogo'>
 
-  {data.map (data=> {
-    return(
-      <div key={data.id}>
-      <h1>{data.title}</h1>
-   </div> )
-  })}
-</div>
-  )}
-*/
+ 
 
-
->>>>>>> 632904810d286dfc85b445734f5064a94471fadd
 
 return (
 

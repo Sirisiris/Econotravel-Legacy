@@ -6,15 +6,18 @@ import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
 import MediosPago from './components/MediosPago'
+import ExperiencesList from "./components/ExperiencesList";
+import DetalleExperiencia from "./components/DetalleExperiencia";
 
-export default function Router() {
+export default function Rutas () {
     let element = useRoutes([
+      
       {
         element: <Main/>,
         path: "/"
       },
       {
-        element: <Experiences />,
+        element: <ExperiencesList />,
         path: "/experiences"
       },
       {
@@ -36,8 +39,12 @@ export default function Router() {
       {
         element: <Register />,
         path: "/register"
-      }
+      },
       
+      {
+        element: <DetalleExperiencia/>,
+        path:"/descripción"
+      }
     ]);
   
     return element;
