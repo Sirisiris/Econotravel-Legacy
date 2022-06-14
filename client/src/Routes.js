@@ -1,13 +1,11 @@
 import { useRoutes } from "react-router-dom";
 import Main from "./components/Main";
-import Experiences from "./components/Experiences";
+import Experiences from "./components/ExperiencesList";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
 import MediosPago from './components/MediosPago'
-import ExperienceDetail from "./components/Experiencedetail";
-import FormularioReserva from './components/FormularioReserva';
 
 export default function Router() {
     let element = useRoutes([
@@ -38,15 +36,8 @@ export default function Router() {
       {
         element: <Register />,
         path: "/register"
-      },
-      {
-        element: <ExperienceDetail />,
-        path: "/experiencedetail"
-      },
-      {
-        element: <FormularioReserva />,
-        path: "/reserva"
       }
+      
     ]);
   
     return element;

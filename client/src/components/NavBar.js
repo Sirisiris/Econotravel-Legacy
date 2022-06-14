@@ -24,8 +24,7 @@ export default function NavBar() {
             <SearchIcon style={{color: "#2e5137"}}/>
             <InputBase
               placeholder="Search…"
-              inputProps={{'aria-label': 'search' }}
-              style={{width: "95%", color: "#498057", paddingLeft: "0.5rem"}}/>
+              inputProps={{'aria-label': 'search' }}/>
               </Box>
           </Grid>
            <Grid item xs={5} sm={3} lg={3} style={{display:"flex", gap: "5%", paddingLeft: "2%"}}>

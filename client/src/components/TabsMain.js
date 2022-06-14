@@ -1,7 +1,10 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Typography, Box, Tab, Tabs, Button, Chip } from "@mui/material";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
+=======
+>>>>>>> 6907c215201a6747a93cb25f2ad91b1bcf70fcbd
 import exp1 from "../images/exp1.png";
 import exp2 from "../images/exp2.png";
 import exp3 from "../images/exp3.png";
@@ -129,7 +132,6 @@ export default function BasicTabs() {
                 250€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -143,7 +145,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
           </Box>
 
           <Box style={{ margin: "2rem" }}>
@@ -185,7 +186,6 @@ export default function BasicTabs() {
                 280€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -199,7 +199,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
           </Box>
           <Box style={{ margin: "2rem" }}>
             <img src={exp3} width="249" height="381" alt="bike"></img>
@@ -240,7 +239,6 @@ export default function BasicTabs() {
                 200€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -254,7 +252,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
           </Box>
         </Box>
       </TabPanel>
@@ -301,7 +298,6 @@ export default function BasicTabs() {
                 145€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -315,7 +311,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
           </Box>
 
           <Box style={{ margin: "2rem" }}>
@@ -411,7 +406,6 @@ export default function BasicTabs() {
                 150€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -425,7 +419,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
           </Box>
         </Box>
       </TabPanel>
@@ -472,7 +465,6 @@ export default function BasicTabs() {
                 320€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -486,7 +478,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
           </Box>
 
           <Box style={{ margin: "2rem" }}>
@@ -528,7 +519,6 @@ export default function BasicTabs() {
                 400€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -542,11 +532,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
-          </Box>
-
-          <Box style={{ margin: "2rem" }}>
-            <img src={exp9} width="249" height="381" alt="bike"></img>
             <Box>
               <Chip
                 label="Montaña"
@@ -584,7 +569,6 @@ export default function BasicTabs() {
                 180€/persona
               </h2>
             </Box>
-            <Link to="/experiencedetail">
             <Button
               style={{
                 backgroundColor: "#2e5137",
@@ -598,7 +582,6 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
-            </Link>
           </Box>
         </Box>
       </TabPanel>

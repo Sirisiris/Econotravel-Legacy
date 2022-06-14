@@ -1,6 +1,6 @@
 import { Box, Container } from "@mui/system";
 import CustomSeparator from "./CustomSeparator";
-import {Typography, FormControl, Button, Grid } from "@mui/material";
+import {Typography, Button, Grid } from "@mui/material";
 
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
@@ -126,11 +126,7 @@ export default function FormularioReserva () {
   
 
                <Typography variant='h2' color=" #2e5137" fontSize="1.5em"fontWeight="700" style={{marginTop:"1em"}}>250€</Typography>
-              <Typography 
-               variant='h2' 
-               color=" #2e5137" 
-               fontSize="1.2em" 
-               fontWeight="700" 
+              <Typography variant='h2' color=" #2e5137" fontSize="1.2em" fontWeight="700" 
                style={{paddingLeft:"1.2em"}}>
                Experiencia Reservada: Paseo en bicicleta por el Montseny.
               
@@ -146,16 +142,16 @@ export default function FormularioReserva () {
             <Container style={{margin:"auto"}}>
                   
                   <Box style={{display:"flex"}}>
-                    <CheckCircleOutlineIcon/>
-                    <Typography variant="h3" fontSize="1em" fontWeight="200">99% de clientes salisfechos</Typography>
+                    <CheckCircleOutlineIcon color="#2e5137"/>
+                    <Typography variant="h3" fontSize="1em" fontWeight="200" color="#2e5137">99% de clientes salisfechos</Typography>
                   </Box>
                   <Box style={{display:"flex"}}>
-                    <CheckCircleOutlineIcon/>
-                    <Typography variant="h3" fontSize="1em" fontWeight="200">Colaboradores de calidad</Typography>
+                    <CheckCircleOutlineIcon color="#2e5137"/>
+                    <Typography variant="h3" marginLeft="2 em" fontSize="1em" fontWeight="200" color="#2e5137">Colaboradores de calidad</Typography>
                     </Box>
                   <Box style={{display:"flex"}}> 
                     <CheckCircleOutlineIcon color="#2e5137"/>
-                    <Typography variant="h3" fontSize="1em" fontWeight="200">Pago 100% seguro</Typography>
+                    <Typography variant="h3" fontSize="1em" fontWeight="200" color="#2e5137">Pago 100% seguro</Typography>
                   </Box>
             </Container>
 

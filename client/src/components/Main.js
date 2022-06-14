@@ -52,7 +52,7 @@ export default function Main() {
           backgroundColor: "#FBF1E3",
           height: "100%",
           textAlign: "center",
-          paddingTop: "5rem",
+          paddingTop: "8rem",
           paddingBottom: "6rem"
         }}
       >
