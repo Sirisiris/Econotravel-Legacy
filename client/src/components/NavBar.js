@@ -4,10 +4,36 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
 import {Grid,Box, InputBase, Button} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
-
+import {useEffect, useState} from 'react';
+import ExperiencesList from "./ExperiencesList";
 
 
 export default function NavBar() {
+  /*
+    const [ExperiencesList, setExperiencesList] = useState([]);
+    const [busqueda, setBusqueda]= useState("");
+   
+  const handleChange=e=>{
+    setBusqueda(e.target.value);
+    filtrar(e.target.value);
+  }
+  
+  const filtrar=(terminoBusqueda)=>{
+    var resultadosBusqueda=ExperiencesList.filter((elemento)=>{
+      if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+      || elemento.company.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+      ){
+        return elemento;
+      }
+    });
+    setExperiencesList(resultadosBusqueda);
+  }
+  
+  useEffect(()=>{
+  ExperiencesList();
+  },[])
+*/
+
   return (
     <>
     <Grid container style={{backgroundColor: '#fbf1e3'}}>
