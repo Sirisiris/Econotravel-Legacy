@@ -8,7 +8,7 @@
             "duration": 5,
             "img": "https://cdn.pixabay.com/photo/2020/05/16/17/23/cycling-5178398_960_720.jpg",
             "accessibility": "Actividad disponible para todas las edades. Disponemos de bicicletas accesibles para personas con movilidad reducida en el tren inferior así como sillines con capacidad para niños menores de 5 años (peso máximo 20kg).",
-            "tags": "montaña",
+            "tag1": "montaña",
             "tag2": "bicicleta",
             "tag3": "excursión larga"
         },
@@ -109,7 +109,7 @@
             "tag3": "excursión larga"
         }
     ]
-  }
-  
-  
-  
+}
+
+
+

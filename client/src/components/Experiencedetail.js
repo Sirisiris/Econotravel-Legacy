@@ -8,7 +8,8 @@ import FormControl from '@mui/material/FormControl';
 import { Select } from '@mui/material'; 
 import CustomSeparator from './CustomSeparator.js';
 import Content from './LeerMás.js';
-import { Link } from "react-router-dom";
+
+
 
 
 
@@ -32,19 +33,19 @@ export default function ExperienceDetail () {
             color= "#2e5137"
             style={{ paddingTop:"1em", fontSize: "1.5rem", fontWeight: "700" }}>
           
-          Paseo en bicicleta por el Montseny</Typography>
+          {data.title}</Typography>
       </Grid>   
          <Container style={{display:"flex", flexDirection:"row", width:"90vw",height:"100vh"}}>
           
           <Box style={{display:"flex", marginTop:"3em", width:"90%"}}>
-          <img src={exp1} alt="bici" width="442" height="284"/>
+          <img src={data.img} alt="bici" width="442" height="284"/>
          
          <Content/> 
           </Box>
 
          
          
-          <Grid container style= {{ dislay:"flex", flexDirection:"column", marginTop: "3em", border: "2px solid #2e5137", width:"20em", height:"18em"}}>
+          <Grid container style= {{ display:"flex", flexDirection:"column", marginTop: "3em", border: "2px solid #2e5137", width:"20em", height:"18em"}}>
   
 
         <Typography variant='h2' color=" #2e5137" fontSize="1.5em"fontWeight="700" style={{paddingLeft:"1em",marginTop:"1em"}}>250€</Typography>
@@ -61,12 +62,11 @@ export default function ExperienceDetail () {
           <MenuItem value={3}>3</MenuItem>
         </Select>
       </FormControl>
-      <Link to="/reserva">
+       
         <Button style={{ 
               backgroundColor: "#2e5137", marginTop:"2em", borderRadius:"50px", color:"white",textTransform:"none", width:"17em", margin:"auto"}} size="small">
           Reservar
         </Button> 
-        </Link>
         
     
           </Grid>
