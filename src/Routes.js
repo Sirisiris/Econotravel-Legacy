@@ -5,7 +5,9 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
-import MediosPago from './components/MediosPago'
+import MediosPago from './components/MediosPago';
+import Experiencedetail from './components/Experiencedetail';
+import Carrito from './components/Carrito'
 
 export default function Router() {
     let element = useRoutes([
@@ -36,6 +38,14 @@ export default function Router() {
       {
         element: <Register />,
         path: "/register"
+      },
+      {
+        element: <Experiencedetail />,
+        path: "/experiencesdetail"
+      },
+      {
+        element: <Carrito />,
+        path: "/carrito"
       }
     ]);
   

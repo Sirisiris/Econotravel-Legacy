@@ -29,7 +29,7 @@ export default function NavBar() {
           </Grid>
            <Grid item xs={5} sm={3} lg={3} style={{display:"flex", gap: "5%", paddingLeft: "2%"}}>
             <Link to="/login"><Button style={{color: "#2e5137"}}><AccountCircleIcon style={{paddingRight: "5%"}} /> Login</Button></Link>
-            <Link  to="shopping" style={{color:"#2e5137", paddingLeft:"1em"}}><Button style={{color: "#2e5137"}}><ShoppingCartIcon style={{paddingRight: "5%"}}/> Shopping</Button></Link>
+            <Link  to="/carrito" style={{color:"#2e5137", paddingLeft:"1em"}}><Button style={{color: "#2e5137"}}><ShoppingCartIcon style={{paddingRight: "5%"}}/> Shopping</Button></Link>
          </Grid>
       </nav>
      
