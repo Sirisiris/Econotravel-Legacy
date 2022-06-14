@@ -50,20 +50,18 @@ export default function Main() {
         className="Experiencias"
         style={{
           backgroundColor: "#FBF1E3",
-          height: "30rem",
+          height: "100%",
           textAlign: "center",
-          paddingTop: "10rem",
+          paddingTop: "5rem",
+          paddingBottom: "6rem"
         }}
       >
         <Typography
           variant="h2"
           color="#2e5137"
-          style={{ fontFamily: "Next Southerland Serif DEMO" }}
+          style={{ fontFamily: "Next Southerland Serif DEMO" , paddingBottom: "2rem"}}
         >
           Experiencias en el área de Barcelona
-        </Typography>
-        <Typography variant="h5" color="#2e5137">
-          Ubicación - Transporte - Duración
         </Typography>
         <BasicTabs />
       </section>

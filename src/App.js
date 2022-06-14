@@ -4,15 +4,16 @@ import NavBar from './components/NavBar';
 import Router from './Routes';
 import Footer from './components/Footer';
 
+
+
 function App() {
   return (
 
     <BrowserRouter>
       <div className="App">
         <NavBar />
-       
+      
         <Router />
-        
         <Footer />
   
          </div>

@@ -8,8 +8,7 @@ import FormControl from '@mui/material/FormControl';
 import { Select } from '@mui/material'; 
 import CustomSeparator from './CustomSeparator.js';
 import Content from './LeerMás.js';
-
-
+import { Link } from "react-router-dom";
 
 
 
@@ -62,11 +61,12 @@ export default function ExperienceDetail () {
           <MenuItem value={3}>3</MenuItem>
         </Select>
       </FormControl>
-       
+      <Link to="/reserva">
         <Button style={{ 
               backgroundColor: "#2e5137", marginTop:"2em", borderRadius:"50px", color:"white",textTransform:"none", width:"17em", margin:"auto"}} size="small">
           Reservar
         </Button> 
+        </Link>
         
     
           </Grid>

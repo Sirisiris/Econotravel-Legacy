@@ -33,7 +33,7 @@ export default function Experiences () {
         width= "249"
         height="381"
           alt="bike"></img>
-        <Box>
+        <Box style={{marginTop:"0.5em"}}>
         <Chip label="Montaña" variant="outlined" style={{width:"80px",height:"25px"}}/>
         <Chip label="Bici" variant="outlined"style={{width:"80px", height:"25px", marginLeft:"0.5em"}} />
         <Chip label="2 horas" variant="outlined" style={{width:"80px",height:"25px", marginLeft:"0.5em"}}/>
@@ -52,7 +52,7 @@ export default function Experiences () {
     
 </Container>
 </Grid>
-        
+
 
 
       

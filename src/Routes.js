@@ -5,9 +5,9 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
-import MediosPago from './components/MediosPago';
-import Experiencedetail from './components/Experiencedetail';
-import Carrito from './components/Carrito'
+import MediosPago from './components/MediosPago'
+import ExperienceDetail from "./components/Experiencedetail";
+import FormularioReserva from './components/FormularioReserva';
 
 export default function Router() {
     let element = useRoutes([
@@ -40,12 +40,12 @@ export default function Router() {
         path: "/register"
       },
       {
-        element: <Experiencedetail />,
-        path: "/experiencesdetail"
+        element: <ExperienceDetail />,
+        path: "/experiencedetail"
       },
       {
-        element: <Carrito />,
-        path: "/carrito"
+        element: <FormularioReserva />,
+        path: "/reserva"
       }
     ]);
   
