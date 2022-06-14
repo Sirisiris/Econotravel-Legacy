@@ -4,25 +4,11 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
 import {Grid,Box, InputBase, Button} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
-import { useState, useEffect } from "react";
-
+import {useEffect, useState} from 'react';
+import ExperiencesList from "./ExperiencesList";
 
 
 export default function NavBar() {
-
-const navigate= useNavigate()
-const [search, setSearch] = useState ("")
-const handleClick= (e)=> {
-  e.preventDefault()
-navigate (`/experiences?input=${search}`)
-  
-}
-
-const handleChange= (e)=> {
-  e.preventDefault()
-  setSearch (e.target.value)
-}
-
 
   return (
     <>
