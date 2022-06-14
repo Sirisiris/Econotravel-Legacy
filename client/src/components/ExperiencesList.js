@@ -19,7 +19,27 @@ export default function ExperiencesList (){
   },[])
 
   console.log (data)
+<<<<<<< HEAD
   
+=======
+
+/*
+return (
+ 
+<div className='Catalogo'>
+
+  {data.map (data=> {
+    return(
+      <div key={data.id}>
+      <h1>{data.title}</h1>
+   </div> )
+  })}
+</div>
+  )}
+*/
+
+
+>>>>>>> 632904810d286dfc85b445734f5064a94471fadd
 
 return (
 

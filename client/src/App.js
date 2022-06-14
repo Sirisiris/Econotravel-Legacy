@@ -5,11 +5,6 @@ import Router from './Routes';
 import Footer from './components/Footer';
 import ExperiencesList from './components/ExperiencesList.js';
 
-
-
-
-
-
 function App() {
   return (
 
