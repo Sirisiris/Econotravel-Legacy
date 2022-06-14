@@ -1,8 +1,6 @@
 import React from 'react';
 import { Button,Container, Chip } from '@mui/material';
 import {Grid,Box} from "@mui/material";
-import exp1 from "../images/exp1.png"
-import data from "../db.json"
 import { useEffect,useState } from 'react';
 import axios from "axios";
 
@@ -22,34 +20,6 @@ export default function ExperiencesList (){
 
   console.log (data)
   
-
-
-   
-  
-
-
-
-
-
-
-
-
-/*
-return (
- 
-<div className='Catalogo'>
-
-  {data.map (data=> {
-    return(
-      <div key={data.id}>
-      <h1>{data.title}</h1>
-   </div> )
-  })}
-</div>
-  )}
-*/
-
-
 
 return (
 
