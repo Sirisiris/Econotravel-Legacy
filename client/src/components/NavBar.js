@@ -9,30 +9,6 @@ import ExperiencesList from "./ExperiencesList";
 
 
 export default function NavBar() {
-  /*
-    const [ExperiencesList, setExperiencesList] = useState([]);
-    const [busqueda, setBusqueda]= useState("");
-   
-  const handleChange=e=>{
-    setBusqueda(e.target.value);
-    filtrar(e.target.value);
-  }
-  
-  const filtrar=(terminoBusqueda)=>{
-    var resultadosBusqueda=ExperiencesList.filter((elemento)=>{
-      if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-      || elemento.company.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
-      ){
-        return elemento;
-      }
-    });
-    setExperiencesList(resultadosBusqueda);
-  }
-  
-  useEffect(()=>{
-  ExperiencesList();
-  },[])
-*/
 
   return (
     <>
