@@ -4,12 +4,26 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
 import {Grid,Box, InputBase, Button} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
-import {useEffect, useState} from 'react';
 import ExperiencesList from "./ExperiencesList";
+import { useState, useEffect } from "react";
+import MenuDropDown from "./MenuDropDown";
+
 
 
 export default function NavBar() {
-
+  const navigate= useNavigate()
+  const [search, setSearch] = useState ("")
+  const handleClick= (e)=> {
+    e.preventDefault()
+  navigate (`/experiences?input=${search}`)
+  
+  }
+  
+  const handleChange= (e)=> {
+    e.preventDefault()
+    setSearch (e.target.value)
+  }
+  
   return (
     <>
     <Grid container style={{backgroundColor: '#fbf1e3'}}>
@@ -33,8 +47,8 @@ export default function NavBar() {
             </Box>
           </Grid>
            <Grid item xs={5} sm={3} lg={3} style={{display:"flex", gap: "5%", paddingLeft: "2%"}}>
-            <Link to="/login"><Button style={{color: "#2e5137"}}><AccountCircleIcon style={{paddingRight: "5%"}} /> Login</Button></Link>
-            <Link  to="shopping" style={{color:"#2e5137", paddingLeft:"1em"}}><Button style={{color: "#2e5137"}}><ShoppingCartIcon style={{paddingRight: "5%"}}/> Shopping</Button></Link>
+            <MenuDropDown/>
+            <Link  to="carrito" style={{color:"#2e5137", paddingLeft:"1em"}}><Button style={{color: "#2e5137"}}><ShoppingCartIcon style={{paddingRight: "5%"}}/> Shopping</Button></Link>
          </Grid>
       </nav>
      

@@ -3,7 +3,7 @@ import { Box, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import CarritoVacio from "../images/CarritoVacio.png";
 
-export default function ComoFunciona() {
+export default function Carrito() {
   return (
     <section
       style={{
@@ -11,7 +11,7 @@ export default function ComoFunciona() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        height: "86.4vh",
+        height: "86.3vh",
         textAlign: "center"
       }}
     >
@@ -23,7 +23,7 @@ export default function ComoFunciona() {
         >
           Reservas
         </Typography>
-        <img src={CarritoVacio} alt="" style={{paddingBottom: "3rem"}}/>
+        <img src={CarritoVacio} alt="" style={{padding: "3rem", width: "60%"}}/>
         <Typography variant="h4" color="#2e5137">Ups! No tienes ninguna experiencia reservada.</Typography>
         <Link to="/experiences">
             <Button

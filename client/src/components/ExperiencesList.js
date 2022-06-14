@@ -16,7 +16,7 @@ export default function ExperiencesList (){
   useEffect (()=>{
     axios.get (`${process.env.REACT_APP_URL}/experiences`)
     .then (response=> {
-      setData (response.data)
+      setData (response.data.filter(e=>e.title.toLowerCase().includes(searchTerm)))
     })
   },[searchTerm])
 

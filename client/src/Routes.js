@@ -8,6 +8,7 @@ import ComoFunciona from './components/ComoFunciona';
 import MediosPago from './components/MediosPago'
 import ExperiencesList from "./components/ExperiencesList";
 import DetalleExperiencia from "./components/DetalleExperiencia";
+import Carrito from "./components/Carrito";
 
 export default function Rutas () {
     let element = useRoutes([
@@ -44,6 +45,11 @@ export default function Rutas () {
       {
         element: <DetalleExperiencia/>,
         path:"/descripción"
+      },
+      
+      {
+        element: <Carrito/>,
+        path:"/carrito"
       }
     ]);
   
