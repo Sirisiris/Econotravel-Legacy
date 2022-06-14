@@ -2,9 +2,6 @@ import * as React from 'react';
 import { Button,Container, Chip } from '@mui/material';
 import {Grid,Box} from "@mui/material";
 import exp1 from "../images/exp1.png";
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
 
 export default function Experiences () {
 
