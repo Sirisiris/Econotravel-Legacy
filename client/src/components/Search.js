@@ -1,11 +1,29 @@
 import React, { Component } from 'react';
+/*
+export default function Search {
 
-export default class Search extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Hola, Soy el Search</h1>
-      </div>
-    );
+  
+  const [search, setSearch] = useState ("")
+
+
+
+  const searcher = (e)=> {
+    setSearch (e.target.value)
+  }
+  
+  useEffect ( ()=> {
+    ExperiencesList ()
+  }, [])
+  
+  
+  let results= [];
+  if (!search)
+  { results= ExperiencesList
+  
+  } else {
+    results = ExperiencesList.filter ((experiencia =>
+    experiencia.name.toLowerCase().includes (search.toLocaleLowerCase()))
+  )
   }
 }
+ */

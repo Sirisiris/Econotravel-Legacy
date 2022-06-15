@@ -9,7 +9,7 @@ import BasicTabs from "./TabsMain";
 export default function Main() {
   return (
     <main>
-      {/* -------------- Sección 1 Hero Image ------------- */}
+      {/* < !-------------- Sección 1 Hero Image -------------> */}
       <section className="Hero">
         <Box
           style={{
@@ -72,14 +72,14 @@ export default function Main() {
         style={{ backgroundColor: "#498057", padding: "3rem", display: "flex" }}
       >
         <Grid container>
-          <Grid items xs={12} md={5} lg={5}>
+          <Grid item xs={12} md={5} lg={5}>
             <img
               src={travel}
               alt=""
               style={{ maxWidth: "100%", height: "auto" }}
             />
           </Grid>
-          <Grid items xs={12} md={7} lg={7}>
+          <Grid item xs={12} md={7} lg={7}>
             <Box
               style={{
                 padding: "5rem",

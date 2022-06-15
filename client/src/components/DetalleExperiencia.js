@@ -1,22 +1,33 @@
 import * as React from 'react';
 import { Button,Container } from '@mui/material';
 import {Grid,Box, Typography} from "@mui/material";
-import exp1 from "../images/exp1.png";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import { Select } from '@mui/material'; 
 import CustomSeparator from './CustomSeparator.js';
 import Content from './LeerMás.js';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 
 
 
 
+export default function DetalleExperiencia () {
 
-export default function ExperienceDetail () {
-
+  const [data, setData]=useState([]);
     
+  useEffect (()=>{
+    axios.get ("http://localhost:3000/experiences")
+    .then (response=> {
+      console.log (response)
+      setData (response.data)
+    })
+  },[])
+
+  console.log (data)
+
 
     return (
 

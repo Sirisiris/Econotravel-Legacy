@@ -1,10 +1,10 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 export default function MediosPago() {
     return (
         <>
-        <div className="div-como" style={{height: "77.7vh"}}>
+        <Box className="div-como" style={{height: "77.7vh"}}>
                 <Typography 
                 variant="h2"
                 style={{ 
@@ -27,7 +27,7 @@ export default function MediosPago() {
 
                 </Typography>
 
-            </div>
+            </Box>
         </>
     )
 }

@@ -1,20 +1,23 @@
 import { useRoutes } from "react-router-dom";
 import Main from "./components/Main";
-import Experiences from "./components/ExperiencesList";
+import ExperiencesList from "./components/ExperiencesList";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
-import MediosPago from './components/MediosPago'
+import MediosPago from './components/MediosPago';
+import DetalleExperiencia from "./components/DetalleExperiencia";
+import Carrito from "./components/Carrito";
 
-export default function Router() {
+export default function Rutas () {
     let element = useRoutes([
+      
       {
         element: <Main/>,
         path: "/"
       },
       {
-        element: <Experiences />,
+        element: <ExperiencesList />,
         path: "/experiences"
       },
       {
@@ -36,8 +39,17 @@ export default function Router() {
       {
         element: <Register />,
         path: "/register"
-      }
+      },
       
+      {
+        element: <DetalleExperiencia/>,
+        path:"/descripción"
+      },
+      
+      {
+        element: <Carrito/>,
+        path:"/carrito"
+      }
     ]);
   
     return element;

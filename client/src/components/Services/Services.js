@@ -9,7 +9,7 @@ export default function ExperiencesList () {
     const [data, setData]=useState([]);
     
     useEffect (()=>{
-      axios.get ("http://localhost:3001")
+      axios.get ("http://localhost:3000")
       .then (response=> {
         console.log (response)
         setData (response.data)
@@ -18,12 +18,12 @@ export default function ExperiencesList () {
     
      
       return (
- <div>
+ <>
      <ul>
      {data.map(data=><li>{data.id}</li>)}
 
      </ul>
- </div>
+ </>
 
 
 
