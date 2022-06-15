@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+import FetchExperiencias from './FetchExperiencias';
 
-export default function Search {
-
+export default function SearchComponent () {
+ 
   
-  const [search, setSearch] = useState ("")
 
+const [data, setData]=useState([])
+ const [search, setSearch] = useState ("")   
+
+ const API= `${process.env.REACT_APP_URL}/experiences`
+    axios.get (`${process.env.REACT_APP_URL}/experiences`)
+    .then (response=> {
+      setData (response.data)
+    })
+}
 
 
   const searcher = (e)=> {
@@ -12,18 +21,18 @@ export default function Search {
   }
   
   useEffect ( ()=> {
-    ExperiencesList ()
+  FetchExperiencias ()
   }, [])
   
   
   let results= [];
   if (!search)
-  { results= ExperiencesList
+  { results= FetchExperiencias
   
   } else {
-    results = ExperiencesList.filter ((experiencia =>
-    experiencia.name.toLowerCase().includes (search.toLocaleLowerCase()))
+    results = FetchExperiencias.filter ((data =>
+    data.name.toLowerCase().includes (search.toLocaleLowerCase()))
   )
   }
-}
+
  

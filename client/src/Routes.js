@@ -1,6 +1,5 @@
-import { useRoutes } from "react-router-dom";
+import { useRoutes,} from "react-router-dom";
 import Main from "./components/Main";
-import Experiences from "./components/ExperiencesList";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
@@ -8,6 +7,7 @@ import ComoFunciona from './components/ComoFunciona';
 import MediosPago from './components/MediosPago'
 import ExperiencesList from "./components/ExperiencesList";
 import DetalleExperiencia from "./components/DetalleExperiencia";
+import RutaPrivada from "./components/RutaPrivada";
 
 export default function Rutas () {
     let element = useRoutes([
@@ -44,6 +44,11 @@ export default function Rutas () {
       {
         element: <DetalleExperiencia/>,
         path:"/descripción"
+      },
+
+      {
+        element: <RutaPrivada/>,
+        path: "/rutaprivada"
       }
     ]);
   

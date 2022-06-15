@@ -9,7 +9,7 @@ import exp5 from "../images/exp5.png";
 import exp6 from "../images/exp6.png";
 import exp7 from "../images/exp7.png";
 import exp8 from "../images/exp8.png";
-import exp9 from "../images/exp9.png";
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;

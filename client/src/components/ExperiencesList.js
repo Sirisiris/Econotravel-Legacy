@@ -3,27 +3,49 @@ import { Button,Container, Chip } from '@mui/material';
 import {Grid,Box} from "@mui/material";
 import { useEffect,useState } from 'react';
 import axios from "axios";
-import { useSearchParams } from 'react-router-dom';
+
+
+
+
 
 export default function ExperiencesList (){
 
-  const [searchParams,setSearchParams ]=useSearchParams()
-  const searchTerm= searchParams.get ("input"||"")
+
+  const [data, setData]=useState([]);
+    
+  useEffect (()=>{
+    axios.get ("http://localhost:3000/experiences")
+    .then ((response)=> {
+      console.log (response)
+      setData (response.data)
+    })
+  },[])
+
+  console.log (data)
+
+
+
+
+ /* const [searchParams,setSearchParams ]= useSearchParams();
+  const searchTerm= ("input"||"");
 
   
   const [data, setData]=useState([]);
     
   useEffect (()=>{
     axios.get (`${process.env.REACT_APP_URL}/experiences`)
-    .then (response=> {
-      setData (response.data)
+    .then (response => {
+      console.log (response.data)
+      setData (response.data.filter(e=>e.title.toLowerCase().includes(searchTerm)))
     })
   },[searchTerm])
 
+if (searchTerm===("")){
+  return(
+    <ExperiencesList/>
+  )
+}*/
  
-
- 
-
 
 return (
 
@@ -32,9 +54,7 @@ return (
    
 
    
-   {data.map(data=>
-    
-
+      {data.map(data=>
     
       
       <Container style={{ marginTop:"6em" }}>
@@ -63,6 +83,8 @@ return (
  </Grid>
 
  )}
+        
+    
 
   
 

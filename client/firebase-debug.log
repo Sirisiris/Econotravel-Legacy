@@ -1,0 +1,21 @@
+[debug] [2022-06-15T07:49:15.756Z] ----------------------------------------------------------------------
+[debug] [2022-06-15T07:49:15.760Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2022-06-15T07:49:15.768Z] CLI Version:   11.1.0
+[debug] [2022-06-15T07:49:15.768Z] Platform:      darwin
+[debug] [2022-06-15T07:49:15.770Z] Node Version:  v16.14.2
+[debug] [2022-06-15T07:49:15.775Z] Time:          Wed Jun 15 2022 09:49:15 GMT+0200 (hora de verano de Europa central)
+[debug] [2022-06-15T07:49:15.776Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-15T07:49:15.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-15T07:49:15.878Z] > authorizing via signed-in user (sara13egea@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/SARA/Desktop/Factoria-F5/econotravel/client
+
