@@ -1,12 +1,11 @@
 import { useRoutes } from "react-router-dom";
 import Main from "./components/Main";
-import Experiences from "./components/ExperiencesList";
+import ExperiencesList from "./components/ExperiencesList";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
-import MediosPago from './components/MediosPago'
-import ExperiencesList from "./components/ExperiencesList";
+import MediosPago from './components/MediosPago';
 import DetalleExperiencia from "./components/DetalleExperiencia";
 import Carrito from "./components/Carrito";
 
