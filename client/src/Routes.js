@@ -8,6 +8,7 @@ import ComoFunciona from './components/ComoFunciona';
 import MediosPago from './components/MediosPago';
 import DetalleExperiencia from "./components/DetalleExperiencia";
 import Carrito from "./components/Carrito";
+import PruebaBarra from "./components/PruebaBarra"
 
 export default function Rutas () {
     let element = useRoutes([
@@ -49,6 +50,11 @@ export default function Rutas () {
       {
         element: <Carrito/>,
         path:"/carrito"
+      },
+
+      {
+        element: <PruebaBarra/>,
+        path:"/prueba"
       }
     ]);
   
