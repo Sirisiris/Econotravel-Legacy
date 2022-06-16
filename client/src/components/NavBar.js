@@ -1,14 +1,13 @@
 import { Link, useNavigate } from "react-router-dom";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+//import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
 import {Grid,Box, InputBase, Button} from "@mui/material";
-import SearchIcon from '@mui/icons-material/Search';
+//import SearchIcon from '@mui/icons-material/Search';
 import ResultadosFiltros from "./ResultadosFiltros";
-import ExperiencesList from "./ExperiencesList";
+//import ExperiencesList from "./ExperiencesList";
 import { useState, useEffect } from "react";
 import MenuDropDown from "./MenuDropDown";
-
 
 
 
@@ -27,8 +26,7 @@ export default function NavBar() {
   
   return (
     <>
-    <Grid container style={{backgroundColor: '#fbf1e3'}}>
-      
+    <Grid container>
       <nav style={{display:"flex", flexDirection:"row", alignItems:"center", justifyContent:"space-between", backgroundColor: "#fbf1e4", width: "100%", zIndex: "1"}}>
          
             <Grid item xs={1} sm={3} lg={3}>
@@ -36,12 +34,7 @@ export default function NavBar() {
             </Grid>
             
             <Grid item xs={6} sm={6} lg={6}>  
-            
-            
-            
-            
-            
-            
+              
             {/* <Box   style={{backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem', height: "2.5rem", paddingLeft: "1%"}}>
              <Button onClick= {handleClick}>
              
@@ -50,6 +43,7 @@ export default function NavBar() {
               placeholder="Search…"
               inputProps={{'aria-label': 'search' }}/>
             </Box>  */}
+
           </Grid> 
           
            <Grid item xs={5} sm={3} lg={3} style={{display:"flex", gap: "5%", paddingLeft: "2%"}}>

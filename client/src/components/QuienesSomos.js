@@ -38,7 +38,7 @@ export default function ComoFunciona() {
             color="#2e5137"
             style={{
               paddingBottom: "3rem",
-              fontFamily: "Next Southerland Serif DEMO",
+              fontFamily: 'Southerland',
             }}
           >
             Nosotras

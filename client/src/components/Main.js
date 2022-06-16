@@ -59,7 +59,7 @@ export default function Main() {
         <Typography
           variant="h2"
           color="#2e5137"
-          style={{ fontFamily: "Next Southerland Serif DEMO" , paddingBottom: "2rem"}}
+          style={{ fontFamily: 'Southerland', paddingBottom: "2rem"}}
         >
           Experiencias en el área de Barcelona
         </Typography>
@@ -89,7 +89,7 @@ export default function Main() {
                 justifyContent: "space-around",
               }}
             >
-              <Typography variant="h3" color="#FBF1E3" style={{ fontFamily: "Next Southerland Serif DEMO" }}>
+              <Typography variant="h3" color="#FBF1E3" style={{  fontFamily: 'Southerland' }}>
                 Travel any corner of Barcelona with Us
               </Typography>
               <Typography
