@@ -11,22 +11,36 @@ import axios from "axios";
 export default function ExperiencesList (){
 
 
+  const [loading, setLoading] = useState (false);
+  const [search, setSearch]= useState ("");
+  const [filteredExperiencias, setFilteredExperiencias]= useState([]);
+
+
   const [data, setData]=useState([]);
     
   useEffect (()=>{
     axios.get ("http://localhost:3000/experiences")
     .then ((response)=> {
-      console.log (response)
-      setData (response.data)
-    })
-  },[])
+      setData (response.data)})},[data])
+      
+  
+     
+      
 
-  console.log (data)
+  
+  /*const searchText= ("input"||"");
+
+  
+
+
+  
+
+*/
 
 
 
-
- /* const [searchParams,setSearchParams ]= useSearchParams();
+/*
+ const [searchParams,setSearchParams ]= useSearchParams();
   const searchTerm= ("input"||"");
 
   
@@ -39,12 +53,8 @@ export default function ExperiencesList (){
       setData (response.data.filter(e=>e.title.toLowerCase().includes(searchTerm)))
     })
   },[searchTerm])
+*/
 
-if (searchTerm===("")){
-  return(
-    <ExperiencesList/>
-  )
-}*/
  
 
 return (
@@ -54,10 +64,10 @@ return (
    
 
    
-      {data.map(data=>
+      {data.map((data,id)=>
     
       
-      <Container style={{ marginTop:"6em" }}>
+      <Container style={{ marginTop:"6em" }} key={id}>
     
         
         <img src={data.img}
@@ -77,13 +87,13 @@ return (
         </Button>
      
     
-</Container>
+</Container>)
+}
 
-)}
  </Grid>
 
  )}
-        
+       
     
 
   

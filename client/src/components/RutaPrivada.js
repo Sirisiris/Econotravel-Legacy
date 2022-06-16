@@ -1,5 +1,4 @@
-import { Navigate } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+
 import Rutas from "../Routes";
 
 
