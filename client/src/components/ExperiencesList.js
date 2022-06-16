@@ -22,6 +22,7 @@ export default function ExperiencesList() {
 
   const [data, setData] = useState([]);
 
+
   useEffect(() => {
     axios.get("http://localhost:3000/experiences").then((response) => {
       console.log(response);

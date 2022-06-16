@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Router from './Routes';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
 
@@ -11,9 +12,11 @@ function App() {
 
         <NavBar />
         <Router />
+        
    
         <Footer />
-    
+
+         
 
     </BrowserRouter>
    );
