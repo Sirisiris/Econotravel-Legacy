@@ -55,7 +55,7 @@ export default function ExperiencesList() {
             <h1
               style={{ fontSize: "1.2em", color: "#2e5137", marginTop: "1em" }}
             >
-              {data.tag1}
+              {data.title}
             </h1>
             <h2
               style={{ fontSize: "1em", fontWeight: "200", color: "#2e5137" }}

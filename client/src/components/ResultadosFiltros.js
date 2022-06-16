@@ -1,10 +1,10 @@
-import PruebaResultados from "./PruebaResultados";
+import BarraSearch from "./BarraSearch";
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
 
-const App = () => {
+const ResultadosFiltros = () => {
     
     const [data, setData] = useState([]);
 
@@ -17,10 +17,10 @@ const App = () => {
   }, []);
 
     return (
-      <div>
-        <PruebaResultados Data={data} Placeholder="Please enter the name " />
+      <div className="search">
+        <BarraSearch Data={data} Placeholder="Busca aquí la experiencia" />
       </div>
     );
   };
   
-  export default App;
+  export default ResultadosFiltros;

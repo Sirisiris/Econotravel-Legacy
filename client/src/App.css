@@ -30,6 +30,12 @@
   padding-right: 15em;
   padding-bottom: 5em;
 }
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
 @media (max-width: 900px){
   .div-como{

@@ -1,10 +1,9 @@
 
 import React, { useState } from "react";
-import ExperiencesList from "./ExperiencesList";
 import { Button, Container, Chip } from "@mui/material";
 import { Grid, Box } from "@mui/material";
 
-const PruebaResultados = (props) => {
+const BarraSearch = (props) => {
   const [filterValue, setFilterValue] = useState([]);
 
   const handleSearch = (event) => {
@@ -21,14 +20,13 @@ const PruebaResultados = (props) => {
 
   return (
     <div>
-      <div classname="searchBox"></div>
+      <div classname="searchBox">
       <input style={{backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem', height: "2.5rem", paddingLeft: "1%"}}
         type="text"
         placeholder={props.Placeholder}
         onChange={handleSearch}
-      />
-      {/* {filterValue.length !== 0 ? null : <ExperiencesList />} */}
-      <div className="movieList">
+      /></div>
+      <div>
         {filterValue.length !== 0 &&
           filterValue.map((e) => {
             return (
@@ -85,4 +83,4 @@ const PruebaResultados = (props) => {
     </div>
   );
 };
-export default PruebaResultados;
+export default BarraSearch;
