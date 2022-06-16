@@ -7,20 +7,23 @@ import { useSearchParams } from "react-router-dom";
 
 export default function ExperiencesList() {
   
-  const [searchParams,setSearchParams ]=useSearchParams()
-  const searchTerm= searchParams.get ("input"||"")
-  const [data, setData]=useState([]);
+  // const [searchParams,setSearchParams ]=useSearchParams()
+  // const searchTerm= searchParams.get ("input"||"")
+  // const [data, setData]=useState([]);
     
-  useEffect (()=>{
-    axios.get (`${process.env.REACT_APP_URL}/experiences`)
-    .then ((response)=> {
-      setData (response.data.filter(e=>e.title.toLowerCase().includes(searchTerm)))
-    })
-  },[searchTerm])
+  // useEffect (()=>{
+  //   axios.get (`${process.env.REACT_APP_URL}/experiences`)
+  //   .then ((response)=> {
+  //     console.log(response)
+  //     setData (response.data.filter(e=>e.title.toLowerCase().includes(searchTerm)))
+  //   })
+  // },[searchTerm])
+
 
 
 /*
   const [data, setData] = useState([]);
+
 
   useEffect(() => {
     axios.get("http://localhost:3000/experiences").then((response) => {

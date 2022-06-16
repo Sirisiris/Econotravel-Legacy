@@ -4,6 +4,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from '../images/logo.png';
 import {Grid,Box, InputBase, Button} from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import PruebaBarra from "./PruebaBarra";
 import ExperiencesList from "./ExperiencesList";
 import { useState, useEffect } from "react";
 import MenuDropDown from "./MenuDropDown";
@@ -36,15 +37,16 @@ export default function NavBar() {
             
             <Grid item xs={6} sm={6} lg={6}>
             <Link to="search"></Link>
+            <PruebaBarra />
             
-            <Box style={{backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem', height: "2.5rem", paddingLeft: "1%"}}>
+            {/* <Box   style={{backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem', height: "2.5rem", paddingLeft: "1%"}}>
              <Button onClick= {handleClick}>
               <SearchIcon style={{color: "#2e5137"}}/>
             </Button>
               <InputBase id="busqueda" onChange= {handleChange}
               placeholder="Search…"
               inputProps={{'aria-label': 'search' }}/>
-            </Box>
+            </Box> */}
           </Grid>
            <Grid item xs={5} sm={3} lg={3} style={{display:"flex", gap: "5%", paddingLeft: "2%"}}>
             <MenuDropDown/>
