@@ -6,20 +6,20 @@ import axios from "axios";
 import { useSearchParams } from "react-router-dom";
 
 export default function ExperiencesList() {
-  /*
+  
   const [searchParams,setSearchParams ]=useSearchParams()
   const searchTerm= searchParams.get ("input"||"")
   const [data, setData]=useState([]);
     
   useEffect (()=>{
     axios.get (`${process.env.REACT_APP_URL}/experiences`)
-    .then (response=> {
+    .then ((response)=> {
       setData (response.data.filter(e=>e.title.toLowerCase().includes(searchTerm)))
     })
   },[searchTerm])
 
-*/
 
+/*
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function ExperiencesList() {
       setData(response.data);
     });
   }, []);
-
+*/
   return (
     <Grid container style={{ backgroundColor: "#fbf1e3" }}>
       {data.map((data) => (

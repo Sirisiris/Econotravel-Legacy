@@ -37,11 +37,11 @@ export default function NavBar() {
             <Grid item xs={6} sm={6} lg={6}>
             <Link to="search"></Link>
             
-            <Box   style={{backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem', height: "2.5rem", paddingLeft: "1%"}}>
+            <Box style={{backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem', height: "2.5rem", paddingLeft: "1%"}}>
              <Button onClick= {handleClick}>
               <SearchIcon style={{color: "#2e5137"}}/>
             </Button>
-              <InputBase onChange= {handleChange}
+              <InputBase id="busqueda" onChange= {handleChange}
               placeholder="Search…"
               inputProps={{'aria-label': 'search' }}/>
             </Box>
