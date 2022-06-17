@@ -5,6 +5,11 @@
   list-style: none;
 }
 
+@font-face{
+  font-family: Southerland;
+  src: url('./images/Southerland.ttf') format('truetype');
+}
+
 .input-login{
   color: #2e5137;
   background-color:#d8e4db;
@@ -24,11 +29,21 @@
 
 .div-como{
   background-color: #fbf1e3;
+  height: 100vh;
   text-align: center;
   padding-left: 15em;
   padding-right: 15em;
   padding-bottom: 5em;
 }
+.search{
+  background-color: #fbf1e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 0.4em;
+}
+
 
 @media (max-width: 900px){
   .div-como{

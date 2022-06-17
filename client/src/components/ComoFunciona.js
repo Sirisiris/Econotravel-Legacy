@@ -1,17 +1,17 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 
 export default function ComoFunciona() {
     return (
         <>
-            <div className="div-como" style={{height: "77.7vh"}}>
+            <Box className="div-como" style={{height: "73vh"}}>
                 <Typography 
                 variant="h2"
                 style={{ 
                  fontSize: "3rem", 
                  fontWeight: "300", 
                  color: "#2e5137",
-                 fontFamily: "Next Southerland Serif DEMO",
+                 fontFamily: 'Southerland',
                  padding: "1.5em" }}>
                      Como Funciona
                 </Typography>
@@ -25,7 +25,7 @@ export default function ComoFunciona() {
 
                 </Typography>
 
-            </div>
+            </Box>
         </>
 
     )

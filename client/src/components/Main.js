@@ -59,7 +59,7 @@ export default function Main() {
         <Typography
           variant="h2"
           color="#2e5137"
-          style={{ fontFamily: "Next Southerland Serif DEMO" , paddingBottom: "2rem"}}
+          style={{ fontFamily: 'Southerland', paddingBottom: "2rem"}}
         >
           Experiencias en el área de Barcelona
         </Typography>
@@ -72,14 +72,14 @@ export default function Main() {
         style={{ backgroundColor: "#498057", padding: "3rem", display: "flex" }}
       >
         <Grid container>
-          <Grid items xs={12} md={5} lg={5}>
+          <Grid item xs={12} md={5} lg={5}>
             <img
               src={travel}
               alt=""
               style={{ maxWidth: "100%", height: "auto" }}
             />
           </Grid>
-          <Grid items xs={12} md={7} lg={7}>
+          <Grid item xs={12} md={7} lg={7}>
             <Box
               style={{
                 padding: "5rem",
@@ -89,7 +89,7 @@ export default function Main() {
                 justifyContent: "space-around",
               }}
             >
-              <Typography variant="h3" color="#FBF1E3" style={{ fontFamily: "Next Southerland Serif DEMO" }}>
+              <Typography variant="h3" color="#FBF1E3" style={{  fontFamily: 'Southerland' }}>
                 Travel any corner of Barcelona with Us
               </Typography>
               <Typography

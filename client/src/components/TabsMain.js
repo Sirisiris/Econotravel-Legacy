@@ -528,6 +528,10 @@ export default function BasicTabs() {
             >
               Reserva ahora
             </Button>
+            </Box>
+
+            <Box style={{ margin: "2rem" }}>
+            <img src={exp9} width="249" height="381" alt=""></img>
             <Box>
               <Chip
                 label="Montaña"
@@ -580,6 +584,7 @@ export default function BasicTabs() {
             </Button>
           </Box>
         </Box>
+        
       </TabPanel>
     </Box>
   );

@@ -28,7 +28,7 @@ export default class Register extends Component {
                fontSize: "2.5rem", 
                fontWeight: "300", 
                color: "#2e5137",
-               fontFamily: "Next Southerland Serif DEMO",
+               fontFamily: 'Southerland',
                marginBottom: "1em" }}
             >
               Travel any corner of Barcelona with Us
@@ -91,6 +91,7 @@ export default class Register extends Component {
                 Haz click <Link to="/login"><span className="span-login">aquí</span></Link> si ya estas registrado
               </Typography>
               <div>
+              <Link to="/">
                 <Button
                   style={{
                     backgroundColor: "#FBF1E3",
@@ -107,6 +108,7 @@ export default class Register extends Component {
                 >
                   Register
                 </Button>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,13 +1,14 @@
 import { useRoutes,} from "react-router-dom";
 import Main from "./components/Main";
+import ExperiencesList from "./components/ExperiencesList";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import QuienesSomos from './components/QuienesSomos';
 import ComoFunciona from './components/ComoFunciona';
-import MediosPago from './components/MediosPago'
-import ExperiencesList from "./components/ExperiencesList";
+import MediosPago from './components/MediosPago';
 import DetalleExperiencia from "./components/DetalleExperiencia";
-import RutaPrivada from "./components/RutaPrivada";
+import Carrito from "./components/Carrito";
+import Search from "./components/Search";
 
 export default function Rutas () {
     let element = useRoutes([
@@ -43,12 +44,17 @@ export default function Rutas () {
       
       {
         element: <DetalleExperiencia/>,
-        path:"/descripción"
+        path:"/detalle/:id"
+      },
+      
+      {
+        element: <Carrito/>,
+        path:"/carrito"
       },
 
       {
-        element: <RutaPrivada/>,
-        path: "/rutaprivada"
+        element: <Search/>,
+        path:"/filtros"
       }
     ]);
   

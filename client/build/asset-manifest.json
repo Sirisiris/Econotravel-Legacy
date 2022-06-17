@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.70a587fe.css",
+    "main.js": "/static/js/main.7877b59d.js",
+    "static/js/787.d4d06c75.chunk.js": "/static/js/787.d4d06c75.chunk.js",
+    "static/media/hero-image1.png": "/static/media/hero-image1.25a7b5dd5bd83e1db16b.png",
+    "static/media/hero-image2.png": "/static/media/hero-image2.29511be67523654c1f7b.png",
+    "static/media/travel.png": "/static/media/travel.02c3bbfe0e59ef3750ab.png",
+    "static/media/Fundadora.png": "/static/media/Fundadora.ba9816f9883ab626915d.png",
+    "static/media/experiencia0.png": "/static/media/experiencia0.d55e8303e86a0978409a.png",
+    "static/media/exp2.png": "/static/media/exp2.8d09a01169eb3c92bace.png",
+    "static/media/exp4.png": "/static/media/exp4.d955a68217cb1176ab78.png",
+    "static/media/exp7.png": "/static/media/exp7.94cec297a1f3e5835dc6.png",
+    "static/media/exp5.png": "/static/media/exp5.3134aea307211eef1f68.png",
+    "static/media/exp3.png": "/static/media/exp3.9540bfd8bbc2f3e413e1.png",
+    "static/media/exp1.png": "/static/media/exp1.3ad99f93a4be4c302754.png",
+    "static/media/exp8.png": "/static/media/exp8.e6256ba3e30a85642d34.png",
+    "static/media/exp9.png": "/static/media/exp9.97c7b7646f1959662269.png",
+    "static/media/exp6.png": "/static/media/exp6.1c95e77c0a7af7606747.png",
+    "static/media/logo.png": "/static/media/logo.481d6608b3a961febc73.png",
+    "static/media/CarritoVacio.png": "/static/media/CarritoVacio.c14b2112b55d5c37713a.png",
+    "index.html": "/index.html",
+    "main.70a587fe.css.map": "/static/css/main.70a587fe.css.map",
+    "main.7877b59d.js.map": "/static/js/main.7877b59d.js.map",
+    "787.d4d06c75.chunk.js.map": "/static/js/787.d4d06c75.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70a587fe.css",
+    "static/js/main.7877b59d.js"
+  ]
+}

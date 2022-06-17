@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Button, Typography } from "@mui/material";
+import { Grid, Button, Typography, Box } from "@mui/material";
 import experiencia0 from "../images/experiencia0.png";
 import { Link } from "react-router-dom";
 
@@ -19,7 +19,7 @@ export default class Login extends Component {
           justifyContent="center"
           alignItems="center"
         >
-          <div>
+          <Box>
             <Typography
               variant="h2"
               style={{ 
@@ -27,12 +27,12 @@ export default class Login extends Component {
                fontSize: "2.5rem", 
                fontWeight: "300", 
                color: "#2e5137",
-               fontFamily: "Next Southerland Serif DEMO",
+               fontFamily: 'Southerland',
                marginBottom: "1em" }}
             >
               Travel any corner of Barcelona with Us
             </Typography>
-            <div className="form">
+            <Box className="form">
               <Typography
                 variant="p"
                 style={{
@@ -75,7 +75,8 @@ export default class Login extends Component {
               >
                 Haz click <Link to="/register"><span className="span-login">aquí</span></Link> si todavía no te has registrado
               </Typography>
-              <div>
+              <Box>
+              <Link to="/">
                 <Button
                   style={{
                     backgroundColor: "#FBF1E3",
@@ -92,12 +93,13 @@ export default class Login extends Component {
                 >
                   Login
                 </Button>
-              </div>
-            </div>
-          </div>
-          <div>
+                </Link>
+              </Box>
+            </Box>
+          </Box>
+          <Box>
             <img className="cover" src={experiencia0} alt="Cover" />
-          </div>
+          </Box>
         </Grid>
       </>
     );

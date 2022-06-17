@@ -1,89 +1,51 @@
-import axios from "axios";
-import React from "react";
-import { useState, useEffect } from "react";
-import { Chip, Button, Container, Grid, Box } from "@mui/material";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from "@mui/material";
 
 
-
-
-
-
-
-export default function Catalogo (){
-
-const [data, setData]= useState ([]);
-const [loading, setLoading] = useState (false);
-const [search, setSearch]= useState ("");
-const [filteredExperiencias, setFilteredExperiencias]= useState([]);
-
-
-
-useEffect (() => {
-  setLoading (true);
-axios.get ("http://localhost:3000/experiences")
-  .then ((response)=> {
-    setData (response.data);
-    setLoading (false);
-})
-.catch (error=> {
-  console.log (error);
-});
-}, []);
-
-
-
-useEffect (()=>{
-  setFilteredExperiencias(
-    data.filter (data=>{
-  return data.title.toLowerCase().includes(search.toLowerCase())
-})
-  )
-}, [search, data])
-
-
-
-if (loading){
-  return <p>....Loading experiences...</p>;
-}
-
- 
-return (
-  <div className= "Catálogo">
-      <h1>Experiences List</h1>
-     
-      <input type="text" placeholder="Search..." onChange={ e=> setSearch(e.target.value)}></input>
- 
-    </div>  
-  )
-}
-/*</div>  {filteredExperiencias.map= ((data,id)=>(
-    
-    <Card key={id} style={{ marginTop:"6em" }}>
-
-    
-</div>*/
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
+export default function Search() {
   
+
+  return(
+  <>
+    <div className='div-como'>
+      <Link to="/">
+            <Button
+              style={{
+                backgroundColor: "#2e5137",
+                width: "15rem",
+                height: "3rem",
+                borderRadius: "50px",
+                color: "#FBF1E3",
+                textTransform: "capitalize",
+                fontSize: "1.5rem",
+                fontWeight: "200",
+                marginTop: "7em"
+              }}
+            >
+              Volver al Inicio
+            </Button>
+      </Link>
+      <Link to="/experiences">
+            <Button
+              style={{
+                backgroundColor: "#2e5137",
+                width: "15rem",
+                height: "3rem",
+                borderRadius: "50px",
+                color: "#FBF1E3",
+                textTransform: "capitalize",
+                fontSize: "1.5rem",
+                fontWeight: "200",
+                marginTop: "7em",
+                marginLeft: "1em",
+                marginRigth: "1em",
+              }}
+            >
+              Mas experiencias
+            </Button>
+      </Link>
+    </div>
+  </>)
   
+}
