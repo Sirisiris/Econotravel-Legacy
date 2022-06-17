@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 
 const BarraSearch = (props) => {
   const [filterValue, setFilterValue] = useState([]);
+  const navigate = useNavigate()
 
   const handleSearch = (event) => {
     const searchValue = event.target.value;
+    navigate("/filtros");
     const filterArray = props.Data.filter((e) => {
       return e.title.toLowerCase().includes(searchValue.toLowerCase());
     });
@@ -21,20 +23,13 @@ const BarraSearch = (props) => {
 
   return (
     <div>
-      <div className="searchBox">
-        <input
-          style={{
-            backgroundColor: "#b5bea7",
-            border: "2px solid #2e5137",
-            borderRadius: "50px",
-            minWidth: "40rem",
-            height: "2.5rem",
-            paddingLeft: "1%",
-          }}
-          type="text"
-          placeholder={props.Placeholder}
-          onChange={handleSearch}
-        />
+      <div classname="searchBox">
+      <input style={{backgroundColor: '#b5bea7', border: "2px solid #2e5137", borderRadius: '50px', minWidth: '40rem', height: "2.5rem", paddingLeft: "1%", position:"absolute", zIndex:"10", top:"0.5em", left:"12em"}}
+        type="text"
+        placeholder={props.Placeholder}
+        onChange={handleSearch}
+      />
+
       </div>
       <div>
         {filterValue.length !== 0 &&

@@ -8,7 +8,7 @@ import ComoFunciona from './components/ComoFunciona';
 import MediosPago from './components/MediosPago';
 import DetalleExperiencia from "./components/DetalleExperiencia";
 import Carrito from "./components/Carrito";
-import ResultadosFiltros from "./components/ResultadosFiltros";
+import Search from "./components/Search";
 
 export default function Rutas () {
     let element = useRoutes([
@@ -53,7 +53,7 @@ export default function Rutas () {
       },
 
       {
-        element: <ResultadosFiltros/>,
+        element: <Search/>,
         path:"/filtros"
       }
     ]);
