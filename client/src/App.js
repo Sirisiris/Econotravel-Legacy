@@ -1,7 +1,7 @@
 import './App.css';
 import {BrowserRouter} from "react-router-dom";
 import NavBar from './components/NavBar';
-import Router from './Routes';
+import Rutas from './Routes';
 import Footer from './components/Footer';
 
 
@@ -13,7 +13,7 @@ function App() {
 
         <NavBar />
         
-        <Router />
+        <Rutas />
         
    
         <Footer />

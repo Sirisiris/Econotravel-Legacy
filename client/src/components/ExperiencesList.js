@@ -7,11 +7,10 @@ import { useSearchParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function ExperiencesList() {
-  
   // const [searchParams,setSearchParams ]=useSearchParams()
   // const searchTerm= searchParams.get ("input"||"")
   // const [data, setData]=useState([]);
-    
+
   // useEffect (()=>{
   //   axios.get (`${process.env.REACT_APP_URL}/experiences`)
   //   .then ((response)=> {
@@ -20,11 +19,7 @@ export default function ExperiencesList() {
   //   })
   // },[searchTerm])
 
-
-
-
   const [data, setData] = useState([]);
-
 
   useEffect(() => {
     axios.get("http://localhost:3000/experiences").then((response) => {
@@ -34,10 +29,32 @@ export default function ExperiencesList() {
   }, []);
 
   return (
-    <Grid container style={{ backgroundColor: "#fbf1e3" }}>
+    <Grid
+      container
+      style={{ backgroundColor: "#fbf1e3" }}
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+    >
       {data.map((data) => (
-        <Container style={{ marginTop: "6em" }}>
-          <img src={data.img} width="249" alt="bike"></img>
+        <Container
+          key={data.id}
+          style={{
+            marginTop: "4em",
+            marginBottom: "4em",
+            marginLeft: "1em",
+            marginRight: "1em",
+            backgroundColor: "#fdf7f0",
+            padding: "1.5em",
+            border: "1px solid #2e5137",
+            borderRadius: "10px",
+            minWidth: "23rem",
+            maxWidth: "23rem",
+            textAlign: "center",
+            height: "23rem"
+          }}
+        >
+          <img src={data.img} width="250px" alt="bike"></img>
           <Box style={{ marginTop: "0.5em" }}>
             <Chip
               label={data.tag1}
@@ -65,20 +82,20 @@ export default function ExperiencesList() {
               {data.price}€/persona
             </h2>
           </Box>
-          <Link to={`detalle/${data.id}`}>
-          <Button
-            style={{
-              backgroundColor: "#2e5137",
-              borderRadius: "50px",
-              color: "white",
-              marginLeft: "10em",
-              marginTop: "-5em",
-              textTransform: "none",
-            }}
-            size="small"
-          >
-            Reserva ahora
-          </Button>
+          <Link to={`/detalle/${data.id}`}>
+            <Button
+              style={{
+                backgroundColor: "#2e5137",
+                borderRadius: "50px",
+                color: "white",
+                marginTop: "1rem",
+                textTransform: "none",
+                width: "8rem"
+              }}
+              size="small"
+            >
+              Reserva ahora
+            </Button>
           </Link>
         </Container>
       ))}
