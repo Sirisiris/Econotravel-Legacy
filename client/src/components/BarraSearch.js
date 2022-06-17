@@ -24,11 +24,13 @@ const BarraSearch = (props) => {
   return (
     <div>
       <div classname="searchBox">
-      <input style={{backgroundColor: '#b5bea7', display:"flex", alignItems:"center", borderRadius: '50px', minWidth: '15rem', height: "2.5rem", paddingLeft: "1%"}}
+      <input style={{backgroundColor: '#b5bea7', border: "2px solid #2e5137", borderRadius: '50px', minWidth: '40rem', height: "2.5rem", paddingLeft: "1%"}}
         type="text"
         placeholder={props.Placeholder}
         onChange={handleSearch}
-      /></div>
+      />
+
+      </div>
       <div>
         {filterValue.length !== 0 &&
           filterValue.map((e) => {

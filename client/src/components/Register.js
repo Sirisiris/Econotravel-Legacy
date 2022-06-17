@@ -28,7 +28,7 @@ export default class Register extends Component {
                fontSize: "2.5rem", 
                fontWeight: "300", 
                color: "#2e5137",
-               fontFamily: "Next Southerland Serif DEMO",
+               fontFamily: 'Southerland',
                marginBottom: "1em" }}
             >
               Travel any corner of Barcelona with Us

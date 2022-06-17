@@ -17,7 +17,7 @@ const ResultadosFiltros = () => {
   }, []);
 
     return (
-      <div className="search">
+      <div className="search" style={{backgroundColor: "#fbf1e4"}}>
         <BarraSearch Data={data} Placeholder="Busca aquí la experiencia" />
       </div>
     );

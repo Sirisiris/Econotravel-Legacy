@@ -19,7 +19,7 @@ export default function Carrito() {
       <Typography
           variant="h2"
           color="#2e5137"
-          style={{ fontFamily: "Next Southerland Serif DEMO", paddingBottom: "2rem"}}
+          style={{  fontFamily: 'Southerland', paddingBottom: "2rem"}}
         >
           Reservas
         </Typography>

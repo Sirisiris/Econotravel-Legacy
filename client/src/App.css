@@ -5,6 +5,11 @@
   list-style: none;
 }
 
+@font-face{
+  font-family: Southerland;
+  src: url('./images/Southerland.ttf') format('truetype');
+}
+
 .input-login{
   color: #2e5137;
   background-color:#d8e4db;
