@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <TableFooter
+    <Box
       style={{
         backgroundColor: "#2e5137",
         display: "flex",
@@ -53,6 +53,6 @@ export default function Footer() {
         </Link>
         
       </Box>
-    </TableFooter>
+    </Box>
   );
 }

@@ -12,28 +12,29 @@ import { useParams } from "react-router";
 import axios from "axios";
 
 export default function DetalleExperiencia() {
-  const { userId } = useParams();
+  const { id } = useParams();
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/experiences").then((response) => {
-      response.data.find((dataItem) => dataItem.id === parseInt(dataItem));
-      setData(userId);
-    });
-  }, [userId]);
-
-  console.log(data);
+    axios.get("http://localhost:3000/experiences")
+    .then((response) => {
+      const item = response.data.find((dataItem) => dataItem.id === parseInt(id));
+      setData(item);
+      })
+    },[id])
+  
 
   return (
-    <Grid container style={{ backgroundColor: "#FBF1E3" }}>
-      <Grid item style={{ paddingLeft: "6em" }}>
+    <Grid container component={"span"} style={{ backgroundColor: "#FBF1E3" }}>
+      <Grid item component={"span"} style={{ paddingLeft: "6em" }}>
         <CustomSeparator />
         <Typography
           variant="body1"
+          component={"span"}
           color="#2e5137"
           style={{ paddingTop: "1em", fontSize: "1.5rem", fontWeight: "700" }}
         >
-          {data.title}
+          {data[id]}
         </Typography>
       </Grid>
       <Container
@@ -45,10 +46,9 @@ export default function DetalleExperiencia() {
         }}
       >
         <Box style={{ display: "flex", marginTop: "3em", width: "90%" }}>
-          <img src={data.img} alt="bici" width="442" height="284" />
-          <Content />
+          <img src={data.img} alt="" width="442" height="284" />
+          {data.description}
         </Box>
-
         <Grid
           container
           style={{
@@ -67,7 +67,7 @@ export default function DetalleExperiencia() {
             fontWeight="700"
             style={{ paddingLeft: "1em", marginTop: "1em" }}
           >
-            250€
+            {data.price}
           </Typography>
 
           <FormControl

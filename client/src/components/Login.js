@@ -76,6 +76,7 @@ export default class Login extends Component {
                 Haz click <Link to="/register"><span className="span-login">aquí</span></Link> si todavía no te has registrado
               </Typography>
               <Box>
+              <Link to="/">
                 <Button
                   style={{
                     backgroundColor: "#FBF1E3",
@@ -92,6 +93,7 @@ export default class Login extends Component {
                 >
                   Login
                 </Button>
+                </Link>
               </Box>
             </Box>
           </Box>
