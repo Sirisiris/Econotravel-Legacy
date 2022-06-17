@@ -44,7 +44,7 @@ export default function Rutas () {
       
       {
         element: <DetalleExperiencia/>,
-        path:"/descripción"
+        path:"/detalle/:id"
       },
       
       {

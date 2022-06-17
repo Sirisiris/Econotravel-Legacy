@@ -8,6 +8,7 @@ import { Select } from '@mui/material';
 import CustomSeparator from './CustomSeparator.js';
 import Content from './LeerMás.js';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import axios from 'axios';
 
 
@@ -16,15 +17,16 @@ import axios from 'axios';
 
 export default function DetalleExperiencia () {
 
+  const {userId} = useParams();
   const [data, setData]=useState([]);
-    
+
   useEffect (()=>{
     axios.get ("http://localhost:3000/experiences")
     .then (response=> {
-      console.log (response)
-      setData (response.data)
+      const item = response.data.find((dataItem) => dataItem.id === parseInt(dataItem));
+      setData(item);
     })
-  },[])
+  },[userId])
 
   console.log (data)
 

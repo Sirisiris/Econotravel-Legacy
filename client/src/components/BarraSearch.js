@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Button, Container, Chip } from "@mui/material";
 import { Grid, Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const BarraSearch = (props) => {
   const [filterValue, setFilterValue] = useState([]);
@@ -62,6 +63,7 @@ const BarraSearch = (props) => {
                           {e.price}€/persona
                         </h2>
                       </Box>
+                      <Link to={`detalle/${e.id}`}>
                       <Button
                         style={{
                           backgroundColor: "#2e5137",
@@ -75,6 +77,7 @@ const BarraSearch = (props) => {
                       >
                         Reserva ahora
                       </Button>
+                      </Link>
                     </Container>
                   
                 </Grid>

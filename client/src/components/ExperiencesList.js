@@ -4,6 +4,7 @@ import { Grid, Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ExperiencesList() {
   
@@ -21,7 +22,7 @@ export default function ExperiencesList() {
 
 
 
-/*
+
   const [data, setData] = useState([]);
 
 
@@ -31,7 +32,7 @@ export default function ExperiencesList() {
       setData(response.data);
     });
   }, []);
-*/
+
   return (
     <Grid container style={{ backgroundColor: "#fbf1e3" }}>
       {data.map((data) => (
@@ -64,6 +65,7 @@ export default function ExperiencesList() {
               {data.price}€/persona
             </h2>
           </Box>
+          <Link to={`detalle/${data.id}`}>
           <Button
             style={{
               backgroundColor: "#2e5137",
@@ -77,6 +79,7 @@ export default function ExperiencesList() {
           >
             Reserva ahora
           </Button>
+          </Link>
         </Container>
       ))}
     </Grid>
