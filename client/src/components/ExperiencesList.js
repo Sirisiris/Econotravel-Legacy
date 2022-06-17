@@ -3,7 +3,7 @@ import { Button, Container, Chip } from "@mui/material";
 import { Grid, Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useSearchParams } from "react-router-dom";
+// import { useSearchParams } from "react-router-dom";
 
 export default function ExperiencesList() {
   
