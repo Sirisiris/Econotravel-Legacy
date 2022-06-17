@@ -8,9 +8,9 @@
             "duration": 5,
             "img": "https://cdn.pixabay.com/photo/2020/05/16/17/23/cycling-5178398_960_720.jpg",
             "accessibility": "Actividad disponible para todas las edades. Disponemos de bicicletas accesibles para personas con movilidad reducida en el tren inferior así como sillines con capacidad para niños menores de 5 años (peso máximo 20kg).",
-            "tag1": "montaña",
-            "tag2": "bicicleta",
-            "tag3": "excursión larga"
+            "tag1": "Montaña",
+            "tag2": "Bicicleta",
+            "tag3": "Excursión larga"
         },
         {
             "id": 2,
@@ -20,21 +20,21 @@
             "duration": 4,
             "img": "https://images.unsplash.com/photo-1529551739587-e242c564f727?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
             "accessibility": "Actividad disponible para todas las edades. Pasarela para silla de ruedas disponible bajo reserva.",
-            "tag1": "playa",
-            "tag2": "barco",
-            "tag3": "excursión larga"
+            "tag1": "Playa",
+            "tag2": "Barco",
+            "tag3": "Excursión larga"
         },
         {
             "id": 3,
-            "title": "Descubre la Barcelona Modernista de noche",
+            "title": "Barcelona Modernista de noche",
             "description": "Desplazarse a pie es una de las mejores formas de descubrir las maravillas modernistas que se esconden en el barcelonés distrito del Eixample, ubicado en el centro de la ciudad. En esta excursión de cuatro horas, descubriremos los principales emblemas del modernismo y visitaremos los templos y edificios más célebres del arquitecto Gaudí. El tour incluye visita guiada al interior de la Casa Batlló y la Sagrada Familia, así como parada para cenar en el restaurante típico catalán Can Masiá, donde disfrutaremos de las mejores carnes de la región acompañadas de vinos de las tierras del Baix Empordá. El restaurante también ofrece opciones vegetarianas y veganas así como menú para niños. Cava aparte.",
             "price": 200,
             "duration": 4,
             "img": "https://images.unsplash.com/photo-1617119525631-2bee044d6020?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             "accessibility": "Actividad disponible para todas las edades. Accesibilidad garantizada para sillas de ruedas.",
-            "tag1": "ciudad",
-            "tag2": "barco",
-            "tag3": "excursión larga"
+            "tag1": "Ciudad",
+            "tag2": "Barco",
+            "tag3": "Excursión larga"
         },
         {
             "id": 4,
@@ -44,9 +44,9 @@
             "duration": 4,
             "img": "https://images.unsplash.com/photo-1611735341450-74d61e660ad2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80",
             "accessibility": "Actividad disponible para todas las edades. El acceso al huerto en silla de ruedas está garantizado",
-            "tag1": "montaña",
-            "tag2": "a pie",
-            "tag3": "excursión larga"
+            "tag1": "Montaña",
+            "tag2": "A pie",
+            "tag3": "Excursión larga"
         },
         {
             "id": 5,
@@ -56,9 +56,9 @@
             "duration": 2,
             "img": "https://images.unsplash.com/photo-1597463345118-6ab31a16e9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             "accessibility": "Actividad disponible para todas las edades. El acceso al museo y al restaurante en silla de ruedas está garantizado",
-            "tag1": "montaña",
-            "tag2": "a pie",
-            "tag3": "excursión corta"
+            "tag1": "Montaña",
+            "tag2": "A pie",
+            "tag3": "Excursión corta"
         },
         {
             "id": 6,
@@ -68,9 +68,9 @@
             "duration": 3,
             "img": "https://images.unsplash.com/photo-1566376799975-ad0a084926fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80",
             "accessibility": "Actividad disponible para todas las edades. Las personas que requieran bicicleta adaptada deben avisar con antelación para garantizar su disponibilidad.",
-            "tag1": "ciudad",
-            "tag2": "bicicleta",
-            "tag3": "excursión corta"
+            "tag1": "Ciudad",
+            "tag2": "Bicicleta",
+            "tag3": "Excursión corta"
         },
         {
             "id": 7,
@@ -80,9 +80,9 @@
             "duration": 6,
             "img": "https://images.unsplash.com/photo-1599484233778-5bdc6b69bbe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1373&q=80",
             "accessibility": "Actividad disponible para todas las edades. Las personas que requieran adaptaciones de movilidad deberán informar a la organización con anterioridad.",
-            "tag1": "ciudad",
-            "tag2": "a pie",
-            "tag3": "excursión larga"
+            "tag1": "Ciudad",
+            "tag2": "A pie",
+            "tag3": "Excursión larga"
         },
         {
             "id": 8,
@@ -92,9 +92,9 @@
             "duration": 8,
             "img": "https://images.unsplash.com/photo-1628538060442-0e54be1d2497?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             "accessibility": "Actividad disponible para todas las edades. Las personas que requieran adaptaciones de movilidad deberán informar a la organización con anterioridad.",
-            "tag1": "ciudad",
-            "tag2": "a pie",
-            "tag3": "excursión larga"
+            "tag1": "Ciudad",
+            "tag2": "A pie",
+            "tag3": "Excursión larga"
         },
         {
             "id": 9,
@@ -104,9 +104,9 @@
             "duration": 4,
             "img": "https://images.unsplash.com/photo-1591729740672-e555dacede09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
             "accessibility": "Actividad disponible para todas las edades. Las personas que requieran adaptaciones de movilidad deberán informar a la organización con anterioridad.",
-            "tag1": "montaña",
-            "tag2": "a pie",
-            "tag3": "excursión larga"
+            "tag1": "Montaña",
+            "tag2": "A pie",
+            "tag3": "Excursión larga"
         }
     ]
 }
