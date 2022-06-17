@@ -32,9 +32,9 @@ export default function ExperiencesList() {
   }, []);
 
   return (
-    <Grid container style={{ backgroundColor: "#fbf1e3" }}>
+    <Grid container style={{ backgroundColor: "#fbf1e3" }} direction="row" justifyContent="center" alignItems="center">
       {data.map((data) => (
-        <Container style={{ marginTop: "6em" }}>
+        <Container style={{ marginTop: "4em", marginBottom: "4em", marginLeft:"1em", marginRight:"1em", width: "auto", backgroundColor:"white", padding: "1.5em", border:"1px solid #000"}}>
           <img src={data.img} width="249" alt="bike"></img>
           <Box style={{ marginTop: "0.5em" }}>
             <Chip
@@ -62,20 +62,21 @@ export default function ExperiencesList() {
             >
               {data.price}€/persona
             </h2>
-          </Box>
-          <Button
+            <Button
             style={{
               backgroundColor: "#2e5137",
               borderRadius: "50px",
               color: "white",
               marginLeft: "10em",
-              marginTop: "-5em",
+              marginTop: "1em",
               textTransform: "none",
             }}
             size="small"
           >
             Reserva ahora
           </Button>
+          </Box>
+          
         </Container>
       ))}
     </Grid>
