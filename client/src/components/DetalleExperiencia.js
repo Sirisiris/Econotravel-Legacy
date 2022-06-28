@@ -24,89 +24,89 @@ export default function DetalleExperiencia() {
     },[id])
   
 
-  return (
-    <Grid container component={"span"} style={{ backgroundColor: "#FBF1E3" }}>
-      <Grid item component={"span"} style={{ paddingLeft: "6em" }}>
-        <CustomSeparator />
-        <Typography
-          variant="body1"
-          component={"span"}
-          color="#2e5137"
-          style={{ paddingTop: "1em", fontSize: "1.5rem", fontWeight: "700" }}
-        >
-          {data[id]}
-        </Typography>
-      </Grid>
-      <Container
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          width: "90vw",
-          height: "100vh",
-        }}
-      >
-        <Box style={{ display: "flex", marginTop: "3em", width: "90%" }}>
-          <img src={data.img} alt="" width="442" height="284" />
-          {data.description}
+    return (
+      <section style={{backgroundColor: "#fbf1e4", paddingTop: "2rem"}}>
+        <Box style={{marginLeft: "5rem", paddingBottom: "4rem"}}>
+          <CustomSeparator />
         </Box>
-        <Grid
-          container
+        <Container
           style={{
             display: "flex",
-            flexDirection: "column",
-            marginTop: "3em",
-            border: "2px solid #2e5137",
-            width: "20em",
-            height: "18em",
+            flexDirection: "row",
+            height: "77.9vh",
           }}
         >
-          <Typography
-            variant="h2"
-            color=" #2e5137"
-            fontSize="1.5em"
-            fontWeight="700"
-            style={{ paddingLeft: "1em", marginTop: "1em" }}
-          >
-            {data.price}
-          </Typography>
-
-          <FormControl
-            style={{ display: "flex", flexDirection: "row", marginTop: "2em" }}
+          <Box style={{ display: "flex", width: "90%" }}>
+            <img src={data.img} alt="" width="442" height="284" />
+            <Typography
+              variant="body1"
+              color=" #2e5137"
+              fontSize="1em"
+              fontWeight="400"
+              style={{ paddingLeft: "1.5rem", paddingRight: "2rem" }}
+            >
+            {data.description}
+            </Typography>
+          </Box>
+          <Box
+            container
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              border: "2px solid #2e5137",
+              width: "20em",
+              height: "18em",
+            }}
           >
             <Typography
               variant="h2"
               color=" #2e5137"
-              fontSize="1.2em"
-              fontWeight="200"
-              style={{ paddingLeft: "1em" }}
+              fontSize="1.5em"
+              fontWeight="700"
+              style={{ paddingLeft: "1em", marginTop: "1em" }}
             >
-              Cantidad
+              {data.price}€
             </Typography>
-            <Select style={{ width: "2em", height: "2em", marginLeft: "1em" }}>
-              <InputLabel id="demo-simple-select-label">Cantidad</InputLabel>
-
-              <MenuItem value={1}>1</MenuItem>
-              <MenuItem value={2}>2</MenuItem>
-              <MenuItem value={3}>3</MenuItem>
-            </Select>
-          </FormControl>
-
-          <Button
-            style={{
-              backgroundColor: "#2e5137",
-              marginTop: "2em",
-              borderRadius: "50px",
-              color: "white",
-              textTransform: "none",
-              width: "17em",
-              margin: "auto",
-            }}
-            size="small"
-          >
-            Reservar
-          </Button>
-        </Grid>
-      </Container>
-    </Grid>
-  );
-}
+  
+            <FormControl
+              style={{ display: "flex", flexDirection: "row", marginTop: "2em" }}
+            >
+              <Typography
+                variant="h2"
+                color=" #2e5137"
+                fontSize="1.2em"
+                fontWeight="200"
+                style={{ paddingLeft: "1em" }}
+              >
+                Cantidad
+              </Typography>
+              <Select style={{ width: "2em", height: "2em", marginLeft: "1em" }}>
+                <InputLabel id="demo-simple-select-label">Cantidad</InputLabel>
+  
+                <MenuItem value={1}>1</MenuItem>
+                <MenuItem value={2}>2</MenuItem>
+                <MenuItem value={3}>3</MenuItem>
+              </Select>
+            </FormControl>
+  
+            <Button
+              style={{
+                backgroundColor: "#2e5137",
+                marginTop: "2em",
+                borderRadius: "50px",
+                color: "white",
+                textTransform: "none",
+                width: "17em",
+                margin: "auto",
+              }}
+              size="small"
+            >
+              Reservar
+            </Button>
+          </Box>
+        </Container>
+      </section>
+    );
+  }
+  
+  
