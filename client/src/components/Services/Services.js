@@ -9,7 +9,7 @@ export default function ExperiencesList () {
     const [data, setData]=useState([]);
     
     useEffect (()=>{
-      axios.get ("http://localhost:3000")
+      axios.get ("localhost:27017")
       .then (response=> {
         console.log (response)
         setData (response.data)

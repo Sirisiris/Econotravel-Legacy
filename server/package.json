@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server db.json --port 3000"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,11 @@
     "json-server-auth": "^2.1.0"
   },
   "dependencies": {
-    "json-server": "^0.17.0"
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "json-server": "^0.17.0",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18"
   }
 }

@@ -10,7 +10,7 @@ const ResultadosFiltros = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/experiences").then((response) => {
+    axios.get("http://localhost:5000/posts").then((response) => {
       console.log(response);
       setData(response.data);
     });

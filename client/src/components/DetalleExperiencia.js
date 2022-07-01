@@ -16,7 +16,7 @@ export default function DetalleExperiencia() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/experiences")
+    axios.get("http://localhost:5000/posts")
     .then((response) => {
       const item = response.data.find((dataItem) => dataItem.id === parseInt(id));
       setData(item);
