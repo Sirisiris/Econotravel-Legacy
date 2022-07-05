@@ -1,13 +1,5 @@
-import iUser from "../model/interfaces/iUser"; 
-const users:iUser[] = [] 
+import iUser from "../model/interfaces/iUser";
 
+const users:iUser[] = []
 
-
-
-
-
-
-
-
-
-export default users; 
+export default users;

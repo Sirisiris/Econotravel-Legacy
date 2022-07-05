@@ -20,11 +20,11 @@ export const createPosts = async (req, res) => {
     }
 }*/
 
-import { Request, Response} from "express"; 
+import { Request, Response } from "express";
 import iExperience from "../model/interfaces/iExperience";
- import experienceModel from '../model/experienceModel';
-  
- export const experienceController = async (req:Request,res:Response) =>{
-    
-    const experiences: any = experienceModel.getExperiences();
-     res.json(experiences); } 
+import experienceModel from "../model/experienceModel";
+
+export const experienceController = async (req: Request, res: Response) => {
+  const experiences: any = experienceModel.getExperiences();
+  res.json(experiences);
+};

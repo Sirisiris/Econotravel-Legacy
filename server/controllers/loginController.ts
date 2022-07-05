@@ -1,11 +1,8 @@
-import { Request, Response } from "express"; 
+import {Request,Response} from 'express';
 
+const loginController = (req:Request, resp:Response) => {
 
+    resp.send('usuario correcto');
+}
 
-const loginController = async (req:Request,res:Response) =>{ res.send('usuario correcto');
- }
- 
- 
- 
- 
- export default loginController; 
+export default loginController;
