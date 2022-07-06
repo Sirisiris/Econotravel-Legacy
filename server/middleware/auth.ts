@@ -47,3 +47,5 @@ if (comparePAssword){
 }
 
 export default encryptPassword;
+
+// exportar en objeto
