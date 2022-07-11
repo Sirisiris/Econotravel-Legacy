@@ -21,7 +21,7 @@ export const createPosts = async (req, res) => {
 }*/
 
 import { Request, Response} from "express";
-import {Experience} from "./model/experience";
+import {Experience} from "./loginController";
 import {experienceDAO} from './loginController';
 const experienceController = async (req:Request,res:Response)=>{
 

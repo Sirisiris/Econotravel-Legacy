@@ -1,2 +1,2 @@
-export {default as experienceRoute} from './experienceRoute';
-export {default as userRoute} from './userRoute';
+export {default as experienceRoute} from './model';
+export {default as userRoute} from './model';
