@@ -1,4 +1,4 @@
-import database from "../services/database.server";
+import database from "../services/database.service";
 import User from "./model";
 
 class UserDAO {

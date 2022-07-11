@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import { NextFunction,Request,Response } from 'express';
-import { User, userDAO } from '../model/user/index';
-
+import { User } from '../user';
+import userDao from '../user/userDao';
 
 const encryptPassword = async (req:Request, res:Response, next:NextFunction) => {
     try {
@@ -27,7 +27,7 @@ const validateUser =  async (req:Request, res:Response, next:NextFunction) => {
                 if (!email || !password) {
                     res.status(400).send('missing some data');
                 } else {
-                const user:any = await userDAO.getUser(req.body);
+                const user:any = await userDao.getUser(req.body);
 
                 const passwordCorrect = await bcrypt.compare(req.body.password, user.password);
 
@@ -39,9 +39,6 @@ const validateUser =  async (req:Request, res:Response, next:NextFunction) => {
                 res.status(400).send('user or password invalid')
             }
         }
-
-
-
 
 export default {
     encryptPassword,
