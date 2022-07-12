@@ -16,6 +16,17 @@ class ExperienceDAO {
         const collection = await database.getCollection(this.collectionName)
         return collection.insertOne(Experience);
     }
+/*
+   async updateExperience(Experience:Experience){
+      const collection = await database.getCollection(this.collectionName)
+      return collection.updateOne({}, Experience);
+   }
+
+   async deleteExperience(Experience:Experience){
+      const collection = await database.getCollection(this.collectionName)
+      return collection.deleteOne(Experience)
+   }
+*/
 }
 
 export default new ExperienceDAO('Experiences');

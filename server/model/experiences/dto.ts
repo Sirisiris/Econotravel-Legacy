@@ -1,3 +1,3 @@
-export default interface UserDTO {
+export default interface ExperienceDTO {
     title: string;
 }
