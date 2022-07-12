@@ -9,8 +9,7 @@ export default class Experience implements ExperienceDTO{
             public description?: string,
             public ubication?: Array<string>,
             public duration?: number,
-            public transport?: string,
-            
+            public transport?: string,   
 
         ) {};
 

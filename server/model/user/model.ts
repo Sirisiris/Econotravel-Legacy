@@ -1,5 +1,5 @@
 import { ObjectId } from "mongodb";
-import Experience from "../model/model";
+import Experience from "../experiences/model";
 import UserDTO from "./dto";
 
 export default class User implements UserDTO{
