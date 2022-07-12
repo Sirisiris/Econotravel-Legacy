@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import userDao from '../user/userDao';
-import { User } from '../user';
+import userDao from '../model/user/userDao';
+import { User } from '../model/user';
 import jwt from '../middleware/jwHandler';
 
 const userController = {

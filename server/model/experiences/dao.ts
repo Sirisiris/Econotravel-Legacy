@@ -1,4 +1,4 @@
-import database from "../services/database.server";
+import database from "../../services/database.service";
 import Experience from "./model";
 
 class ExperienceDAO {
@@ -9,10 +9,8 @@ class ExperienceDAO {
    async getExperiences(){
       // console.log(experiences);
       const collection = await database.getCollection(this.collectionName);
-      return collection.find({});
-
+      return collection.find({}).toArray();
   }
-  async getExperienceByDuration(){}
 
   async saveExperience(Experience:Experience){
         const collection = await database.getCollection(this.collectionName)
