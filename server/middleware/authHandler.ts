@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import { NextFunction,Request,Response } from 'express';
-import { User } from '../user';
-import userDao from '../user/userDao';
+import { User } from '../model/user';
+import userDao from '../model/user/userDao';
 
 const encryptPassword = async (req:Request, res:Response, next:NextFunction) => {
     try {
