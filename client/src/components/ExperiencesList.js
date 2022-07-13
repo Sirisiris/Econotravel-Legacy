@@ -22,17 +22,12 @@ export default function ExperiencesList() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios({
-      method: "GET",
-      uri: "http://localhost:3000/experiences",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers":
-        "POST, GET, PUT, DELETE, OPTIONS, HEAD, Authorization, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Access-Control-Allow-Origin",
-      }}).then((response) => {
-      console.log(response);
+    fetch(
+      'https://econotravel-legacy-server.herokuapp.com/experiences').then(response => response.json())
+      .then(data => console.log(data));
+/*     => {
       setData(response.data);
-    });
+    }); */
   }, []);
 
   return (

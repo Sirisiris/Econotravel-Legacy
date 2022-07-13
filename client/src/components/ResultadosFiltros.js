@@ -9,12 +9,11 @@ const ResultadosFiltros = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      uri: "http://localhost:3000/experiences",
+      uri: "https://econotravel-legacy-server.herokuapp.com/experiences",
       headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers":
-          "POST, GET, PUT, DELETE, OPTIONS, HEAD, Authorization, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Access-Control-Allow-Origin",
-      },
+        "Access-Control-Allow-Origin": "http://example.com",
+        "Access-Control-Allow-Methods": "POST, PUT, PATCH, GET, DELETE, OPTIONS",        
+        "Access-Control-Allow-Headers": "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization"      },
     }).then((response) => {
       console.log(response);
       setData(response.data);
