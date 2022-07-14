@@ -16,15 +16,10 @@ export default function DetalleExperiencia() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios({
-      method: "GET",
-      uri: "http://localhost:3000/experiences",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers":
-        "POST, GET, PUT, DELETE, OPTIONS, HEAD, Authorization, Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Access-Control-Allow-Origin",
-      },
-    }).then((response) => {
+    console.log(process.env.REACT_APP_API_URL)
+    axios.get(
+      process.env.REACT_APP_API_URL+'/experiences/1').then((response) => {
+        console.log(response)
       const item = response.data.find(
         (dataItem) => dataItem.id === parseInt(id)
       );
