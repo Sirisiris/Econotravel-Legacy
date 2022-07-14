@@ -16,9 +16,9 @@ export default function DetalleExperiencia() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    console.log(process.env.REACT_APP_API_URL)
+    console.log(process.env)
     axios.get(
-      process.env.REACT_APP_API_URL+'/experiences/1').then((response) => {
+      process.env.REACT_APP_API_URL+'/experiences').then((response) => {
         console.log(response)
       const item = response.data.find(
         (dataItem) => dataItem.id === parseInt(id)
@@ -28,25 +28,29 @@ export default function DetalleExperiencia() {
   }, [id]);
 
   return (
-    <section style={{ backgroundColor: "#fbf1e4", paddingTop: "2rem" }}>
+    <section style={{ backgroundColor: "#fbf1e3", paddingTop: "2rem" }}>
       <Box style={{ marginLeft: "5rem", paddingBottom: "4rem" }}>
         <CustomSeparator />
+      <Typography variant="h3"          color="#2e5137"
+          style={{ fontFamily: 'Southerland', paddingTop: "2rem"}}>{data.title}</Typography>
       </Box>
       <Container
         style={{
           display: "flex",
           flexDirection: "row",
           height: "77.9vh",
+          marginLeft: "6rem",
+          marginTop: "2rem"
         }}
       >
-        <Box style={{ display: "flex", width: "90%" }}>
-          <img src={data.img} alt="" width="442" height="284" />
+        <Box style={{ display: "flex"}}>
+          <img src={data.img} alt="" width="550" height="300" style={{paddingRight: "5rem"}} />
           <Typography
             variant="body1"
             color=" #2e5137"
             fontSize="1em"
             fontWeight="400"
-            style={{ paddingLeft: "1.5rem", paddingRight: "2rem" }}
+            style={{ paddingLeft: "1.5rem", paddingRight: "5rem", width: "35rem" }}
           >
             {data.description}
           </Typography>
@@ -57,22 +61,22 @@ export default function DetalleExperiencia() {
             display: "flex",
             flexDirection: "column",
             border: "2px solid #2e5137",
-            width: "20em",
-            height: "18em",
+            height: "10rem",
+            padding: "3rem"
           }}
         >
           <Typography
             variant="h2"
             color=" #2e5137"
-            fontSize="1.5em"
+            fontSize="1.6em"
             fontWeight="700"
-            style={{ paddingLeft: "1em", marginTop: "1em" }}
+            style={{textAlign: "center" }}
           >
             {data.price}€
           </Typography>
 
           <FormControl
-            style={{ display: "flex", flexDirection: "row", marginTop: "2em" }}
+            style={{ display: "flex", flexDirection: "row", alignItems: "center", marginTop: "2em" }}
           >
             <Typography
               variant="h2"
@@ -95,14 +99,14 @@ export default function DetalleExperiencia() {
           <Button
             style={{
               backgroundColor: "#2e5137",
-              marginTop: "2em",
               borderRadius: "50px",
               color: "white",
               textTransform: "none",
-              width: "17em",
-              margin: "auto",
+              width: "8rem",
+              marginTop: "2rem",
+              marginBottom: "5rem"
             }}
-            size="small"
+            size="medium"
           >
             Reservar
           </Button>

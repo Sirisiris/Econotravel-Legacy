@@ -6,19 +6,20 @@ import axios from "axios";
 const ResultadosFiltros = () => {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios({
-      method: "GET",
-      uri: "https://econotravel-legacy-server.herokuapp.com/experiences",
-      headers: {
-        "Access-Control-Allow-Origin": "http://example.com",
-        "Access-Control-Allow-Methods": "POST, PUT, PATCH, GET, DELETE, OPTIONS",        
-        "Access-Control-Allow-Headers": "Origin, X-Api-Key, X-Requested-With, Content-Type, Accept, Authorization"      },
-    }).then((response) => {
-      console.log(response);
-      setData(response.data);
-    });
-  }, []);
+  useEffect( ()=> {
+    const fetchData = async ()=>{
+    try {
+      const result = await axios.get('https://econotravel-legacy-server.herokuapp.com/experiences',
+        );
+
+      setData(result.data);
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  fetchData();
+},[])
 
   return (
     <div className="search" style={{ backgroundColor: "#fbf1e4" }}>

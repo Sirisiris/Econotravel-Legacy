@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Chip } from "@mui/material";
-import { Grid, Box } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useSearchParams } from "react-router-dom";
@@ -21,14 +21,20 @@ export default function ExperiencesList() {
 
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch(
-      'https://econotravel-legacy-server.herokuapp.com/experiences').then(response => response.json())
-      .then(data => console.log(data));
-/*     => {
-      setData(response.data);
-    }); */
-  }, []);
+  useEffect( ()=> {
+    const fetchData = async ()=>{
+    try {
+      const result = await axios.get('https://econotravel-legacy-server.herokuapp.com/experiences',
+        );
+
+      setData(result.data);
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  fetchData();
+},[])
 
   return (
     <Grid
@@ -48,42 +54,44 @@ export default function ExperiencesList() {
             marginRight: "1em",
             backgroundColor: "#fdf7f0",
             padding: "1.5em",
-            border: "1px solid #2e5137",
-            borderRadius: "10px",
+            borderRadius: "6px",
             minWidth: "23rem",
             maxWidth: "23rem",
             textAlign: "center",
-            height: "23rem"
+            height: "23rem",
+            boxShadow: "0px 5px 10px 0px rgba(0, 0, 0, 0.2)"
           }}
         >
-          <img src={data.img} width="250px" alt="bike"></img>
+          <img src={data.img} width="250px" height="150px" alt="bike"></img>
           <Box style={{ marginTop: "0.5em" }}>
             <Chip
               label={data.tag1}
               variant="outlined"
-              style={{ width: "80px", height: "25px" }}
+              style={{ width: "80px", height: "25px" , backgroundColor: "#b5bea7", textTransform: "capitalize", color: "#2e5137"}}
             />
             <Chip
               label={data.tag2}
               variant="outlined"
-              style={{ width: "80px", height: "25px", marginLeft: "0.5em" }}
+              style={{ width: "80px", height: "25px", marginLeft: "0.5em"  , backgroundColor: "#b5bea7", textTransform: "capitalize", color: "#2e5137"}}
             />
             <Chip
               label={data.tag3}
               variant="outlined"
-              style={{ width: "80px", height: "25px", marginLeft: "0.5em" }}
+              style={{ width: "80px", height: "25px", marginLeft: "0.5em"  , backgroundColor: "#b5bea7", textTransform: "capitalize", color: "#2e5137"}}
             />
-            <h1
-              style={{ fontSize: "1.2em", color: "#2e5137", marginTop: "1em" }}
-            >
-              {data.title}
-            </h1>
-            <h2
-              style={{ fontSize: "1em", fontWeight: "200", color: "#2e5137" }}
-            >
-              {data.price}€/persona
-            </h2>
           </Box>
+          <Box style={{paddingTop: "1rem"}}>
+        <Typography
+          variant="h6"
+          color="#2e5137">
+            {data.title}
+          </Typography>
+          <Typography
+          variant="body1"
+          fontWeight="200"
+          color="#2e5137">
+              {data.price}€/persona
+            </Typography>
           <Link to={`/detalle/${data.id}`}>
             <Button
               style={{
@@ -99,6 +107,7 @@ export default function ExperiencesList() {
               Reserva ahora
             </Button>
           </Link>
+          </Box>
         </Container>
       ))}
     </Grid>
