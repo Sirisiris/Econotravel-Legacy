@@ -27,7 +27,7 @@ const experienceController = async (req:Request,res:Response)=>{
     try {
             const result = await experienceDAO.getExperiences();
             result
-                ? res.status(201).json(result)
+                ? res.json(result)
                 : res.status(500).send("Failed to create a new user.");
 
     } catch (error: any) {
