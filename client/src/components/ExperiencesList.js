@@ -39,7 +39,7 @@ export default function ExperiencesList() {
   return (
     <Grid
       container
-      style={{ backgroundColor: "#fbf1e3" }}
+      style={{ backgroundColor: "#fbf1e3", paddingBottom: "4rem" }}
       direction="row"
       justifyContent="center"
       alignItems="center"
@@ -48,15 +48,14 @@ export default function ExperiencesList() {
         <Container
           key={data.id}
           style={{
-            marginTop: "4em",
-            marginBottom: "4em",
+            marginTop: "3em",
             marginLeft: "1em",
             marginRight: "1em",
             backgroundColor: "#fdf7f0",
-            padding: "1.5em",
+            padding: "2em",
             borderRadius: "6px",
-            minWidth: "23rem",
-            maxWidth: "23rem",
+            minWidth: "22rem",
+            maxWidth: "22rem",
             textAlign: "center",
             height: "23rem",
             boxShadow: "0px 5px 10px 0px rgba(0, 0, 0, 0.2)"

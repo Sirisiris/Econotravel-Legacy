@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container, Chip } from "@mui/material";
+import { Button, Container, Chip, Typography } from "@mui/material";
 import { Grid, Box } from "@mui/material";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
@@ -42,81 +42,69 @@ const BarraSearch = (props) => {
                 justifyContent="center"
                 alignItems="center"
               >
-                <Container
-                  key={e.id}
-                  style={{
-                    marginTop: "3em",
-                    marginLeft: "1em",
-                    marginRight: "1em",
-                    backgroundColor: "#fdf7f0",
-                    padding: "1.5em",
-                    border: "1px solid #2e5137",
-                    borderRadius: "10px",
-                    minWidth: "23rem",
-                    maxWidth: "23rem",
-                    textAlign: "center",
-                    height: "23rem"
-                  }}
-                >
-                  <img src={e.img} width="249" alt="bike"></img>
-                  <Box style={{ marginTop: "0.5em" }}>
-                    <Chip
-                      label={e.tag1}
-                      variant="outlined"
-                      style={{ width: "80px", height: "25px" }}
-                    />
-                    <Chip
-                      label={e.tag2}
-                      variant="outlined"
-                      style={{
-                        width: "80px",
-                        height: "25px",
-                        marginLeft: "0.5em",
-                      }}
-                    />
-                    <Chip
-                      label={e.tag3}
-                      variant="outlined"
-                      style={{
-                        width: "80px",
-                        height: "25px",
-                        marginLeft: "0.5em",
-                      }}
-                    />
-                    <h1
-                      style={{
-                        fontSize: "1.2em",
-                        color: "#2e5137",
-                        marginTop: "1em",
-                      }}
-                    >
-                      {e.title}
-                    </h1>
-                    <h2
-                      style={{
-                        fontSize: "1em",
-                        fontWeight: "200",
-                        color: "#2e5137",
-                      }}
-                    >
-                      {e.price}€/persona
-                    </h2>
-                    <Link to={`/detalle/${e.id}`}>
-                      <Button
-                        style={{
-                          backgroundColor: "#2e5137",
-                          borderRadius: "50px",
-                          color: "white",
-                          marginTop: "1rem",
-                          textTransform: "none",
-                          width: "8rem"
-                        }}
-                        size="small"
-                      >
-                        Reserva ahora
-                      </Button>
-                    </Link>
-                  </Box>
+        <Container
+          key={e.id}
+          style={{
+            marginTop: "4em",
+            marginBottom: "3em",
+            marginLeft: "1em",
+            marginRight: "1em",
+            backgroundColor: "#fdf7f0",
+            padding: "2em",
+            borderRadius: "6px",
+            minWidth: "22rem",
+            maxWidth: "22rem",
+            textAlign: "center",
+            height: "25rem",
+            boxShadow: "0px 5px 10px 0px rgba(0, 0, 0, 0.2)"
+          }}
+        >
+          <img src={e.img} width="250px" height="150px" alt="bike"></img>
+          <Box style={{ marginTop: "0.5em" }}>
+            <Chip
+              label={e.tag1}
+              variant="outlined"
+              style={{ width: "80px", height: "25px" , backgroundColor: "#b5bea7", textTransform: "capitalize", color: "#2e5137"}}
+            />
+            <Chip
+              label={e.tag2}
+              variant="outlined"
+              style={{ width: "80px", height: "25px", marginLeft: "0.5em"  , backgroundColor: "#b5bea7", textTransform: "capitalize", color: "#2e5137"}}
+            />
+            <Chip
+              label={e.tag3}
+              variant="outlined"
+              style={{ width: "80px", height: "25px", marginLeft: "0.5em"  , backgroundColor: "#b5bea7", textTransform: "capitalize", color: "#2e5137"}}
+            />
+          </Box>
+          <Box style={{paddingTop: "1rem"}}>
+        <Typography
+          variant="h6"
+          color="#2e5137">
+            {e.title}
+          </Typography>
+          <Typography
+          variant="body1"
+          fontWeight="200"
+          color="#2e5137">
+              {e.price}€/persona
+            </Typography>
+          <Link to={`/detalle/${e.id}`}>
+            <Button
+              style={{
+                backgroundColor: "#2e5137",
+                borderRadius: "50px",
+                color: "white",
+                marginTop: "1rem",
+                textTransform: "none",
+                width: "8rem"
+              }}
+              size="small"
+            >
+              Reserva ahora
+            </Button>
+          </Link>
+          </Box>
                 </Container>
               </Grid>
             );
