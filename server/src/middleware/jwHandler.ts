@@ -39,5 +39,6 @@ const validateToken = (req: Request, res: Response, next: NextFunction) => {
 
 export default {
     generateToken,
-    validateToken
+    validateToken,
+    jwt
 }

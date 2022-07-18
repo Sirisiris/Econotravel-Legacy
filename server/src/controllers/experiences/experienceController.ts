@@ -21,7 +21,7 @@ export const createPosts = async (req, res) => {
 }*/
 
 import { Request, Response} from "express";
-import experienceDAO from "../model/experiences/dao";
+import experienceDAO from "../../model/experiences/dao";
 
 const experienceController = async (req:Request,res:Response)=>{
     try {
@@ -34,5 +34,4 @@ const experienceController = async (req:Request,res:Response)=>{
         res.status(400).send(error.message);
     }
 }
-
 export default experienceController;
