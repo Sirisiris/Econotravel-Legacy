@@ -5,7 +5,7 @@ import updateController from "../controllers/experiences/updateController";
 const router = Router();
 
 router.get('/experiences',experienceController);
-router.put('/experience/:id', updateController);
+router.put('/experiences/:id', updateController);
 router.get('/')
 
 export default router;

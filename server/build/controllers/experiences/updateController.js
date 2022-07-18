@@ -1,25 +1,4 @@
 "use strict";
-/*import PostMessage from "../models/postMessage.js";
-
-export const getPosts = async (req, res) => {
-    try {
-        const postMessages = await PostMessage.find();
-        res.status(200).json(postMessages);
-    } catch (error) {
-        res.status(404).json({message: error.message})
-    }
-}
-
-export const createPosts = async (req, res) => {
-    const post = req.body;
-    const newPost = new PostMessage(post);
-    try {
-        await newPost.save();
-        res.status(201).json(newPost);
-    } catch (error) {
-        res.status(409).json({message: error.message})
-    }
-}*/
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -33,16 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const dao_1 = __importDefault(require("../model/experiences/dao"));
-const experienceController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const dao_1 = __importDefault(require("../../model/experiences/dao"));
+const updateController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const result = yield dao_1.default.getExperiences();
+        const numerico = parseFloat(req.params.id);
+        const result = yield dao_1.default.updateExperience(req.body, numerico);
         result
-            ? res.status(201).json(result)
-            : res.status(500).send("Failed to create a new user.");
+            ? res.json(result)
+            : res.status(500).send("Failed to update a new experience.");
     }
     catch (error) {
         res.status(400).send(error.message);
     }
 });
-exports.default = experienceController;
+exports.default = updateController;

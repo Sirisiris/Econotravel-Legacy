@@ -19,9 +19,9 @@ class ExperienceDAO {
         return collection.insertOne(Experience);
     }
 
-    async updateExperience (experience:Experience, id:string) {
+    async updateExperience (experience:Experience, id:number) {
       const collection = await database.getCollection(this.collectionName)
-      const result =await collection.updateOne({_id: id}, {$set: experience});
+      const result =await collection.updateOne({id: id}, {$set: experience});
       console.log(`${result} documents matched the query criteria`);
      // console.log(`${collection.modifiedCount} documents were updated`)
       return result

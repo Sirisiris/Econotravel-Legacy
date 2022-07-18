@@ -37,5 +37,6 @@ const validateToken = (req, res, next) => {
 };
 exports.default = {
     generateToken,
-    validateToken
+    validateToken,
+    jwt: jsonwebtoken_1.default
 };

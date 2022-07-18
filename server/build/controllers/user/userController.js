@@ -23,8 +23,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const userDao_1 = __importDefault(require("../model/user/userDao"));
-const jwHandler_1 = __importDefault(require("../middleware/jwHandler"));
+const userDao_1 = __importDefault(require("../../model/user/userDao"));
+const jwHandler_1 = __importDefault(require("../../middleware/jwHandler"));
 const userController = {
     saveUser: (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         try {

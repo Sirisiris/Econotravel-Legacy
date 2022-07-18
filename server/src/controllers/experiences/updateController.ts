@@ -4,7 +4,9 @@ import experienceDAO from "../../model/experiences/dao";
 
 const updateController = async (req:Request,res:Response)=>{
     try {
-            const result = await experienceDAO.updateExperience(req.body, req.params.id)
+        const numerico = parseFloat(req.params.id)
+            const result = await experienceDAO.updateExperience(req.body, numerico)
+            
             result
                 ? res.json(result)
                 : res.status(500).send("Failed to update a new experience.");
