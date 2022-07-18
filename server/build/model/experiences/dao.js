@@ -30,6 +30,7 @@ class ExperienceDAO {
             return collection.insertOne(Experience);
         });
     }
+    // id cambio a numerico
     updateExperience(experience, id) {
         return __awaiter(this, void 0, void 0, function* () {
             const collection = yield database_service_1.default.getCollection(this.collectionName);

@@ -18,7 +18,7 @@ class ExperienceDAO {
         const collection = await database.getCollection(this.collectionName)
         return collection.insertOne(Experience);
     }
-
+      // id cambio a numerico
     async updateExperience (experience:Experience, id:number) {
       const collection = await database.getCollection(this.collectionName)
       const result =await collection.updateOne({id: id}, {$set: experience});

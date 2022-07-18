@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dao_1 = __importDefault(require("../../model/experiences/dao"));
 const updateController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        // hacemos una variable numerica para transformar id de string a numerico utilizando el parseFloat
         const numerico = parseFloat(req.params.id);
         const result = yield dao_1.default.updateExperience(req.body, numerico);
         result
