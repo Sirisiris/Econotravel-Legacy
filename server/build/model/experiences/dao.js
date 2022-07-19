@@ -24,7 +24,7 @@ class ExperienceDAO {
             return collection.find({}).toArray();
         });
     }
-    saveExperience(Experience) {
+    insertExperience(Experience) {
         return __awaiter(this, void 0, void 0, function* () {
             const collection = yield database_service_1.default.getCollection(this.collectionName);
             return collection.insertOne(Experience);
@@ -36,6 +36,15 @@ class ExperienceDAO {
             const collection = yield database_service_1.default.getCollection(this.collectionName);
             const result = yield collection.updateOne({ id: id }, { $set: experience });
             console.log(`${result} documents matched the query criteria`);
+            // console.log(`${collection.modifiedCount} documents were updated`)
+            return result;
+        });
+    }
+    deleteExperience(experience, id) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const collection = yield database_service_1.default.getCollection(this.collectionName);
+            const result = yield collection.deleteOne({ id: id });
+            //console.log(`${result} documents matched the query criteria`);
             // console.log(`${collection.modifiedCount} documents were updated`)
             return result;
         });

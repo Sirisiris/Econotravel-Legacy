@@ -13,17 +13,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const dao_1 = __importDefault(require("../../model/experiences/dao"));
-const deleteController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+const experienceController = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        // hacemos una variable numerica para transformar id de string a numerico utilizando el parseFloat
-        const numerico = parseFloat(req.params.id);
-        const result = yield dao_1.default.deleteExperience(req.body, numerico);
+        const result = yield dao_1.default.getExperiences();
         result
             ? res.json(result)
-            : res.status(500).send("Failed to update a new experience.");
+            : res.status(500).send("Failed to create a new user.");
     }
     catch (error) {
         res.status(400).send(error.message);
     }
 });
-exports.default = deleteController;
+exports.default = experienceController;
