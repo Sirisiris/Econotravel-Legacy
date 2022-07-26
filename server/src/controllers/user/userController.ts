@@ -36,10 +36,10 @@ const userController = {
             res.status(400).send(error.message);
         }
     },
-    reserva: async (req: Request, res: Response) => {
+/*    reserva: async (req: Request, res: Response) => {
         res.
     },
+    */
 }
-
 
 export default userController;
