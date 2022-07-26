@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import userDao from '../../model/user/userDao';
 import { User } from '../../model/user';
 import jwt from '../../middleware/jwHandler';
+import encryptPassword from '../../middleware/authHandler';
 
 const userController = {
     saveUser: async (req: Request, res: Response) => {
@@ -34,7 +35,10 @@ const userController = {
 
             res.status(400).send(error.message);
         }
-    }
+    },
+    reserva: async (req: Request, res: Response) => {
+        res.
+    },
 }
 
 

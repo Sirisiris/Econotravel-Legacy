@@ -8,7 +8,8 @@ const userController_1 = __importDefault(require("../controllers/user/userContro
 const authHandler_1 = __importDefault(require("../middleware/authHandler"));
 const jwHandler_1 = __importDefault(require("../middleware/jwHandler"));
 const router = (0, express_1.default)();
-router.post('/user', authHandler_1.default.encryptPassword, userController_1.default.saveUser);
-router.post('/user/login', authHandler_1.default.validateUser, userController_1.default.login);
+router.post('/register', authHandler_1.default.encryptPassword, userController_1.default.saveUser);
+router.get('/register', authHandler_1.default.encryptPassword, userController_1.default.saveUser);
+router.post('/login', authHandler_1.default.validateUser, userController_1.default.login);
 router.get('/user/all', jwHandler_1.default.validateToken, userController_1.default.getAllUsers);
 exports.default = router;

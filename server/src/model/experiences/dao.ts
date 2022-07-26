@@ -1,4 +1,5 @@
 import { ObjectID } from "bson";
+import { id } from "date-fns/locale";
 import { Collection } from "mongodb";
 import database from "../../services/database.service";
 import Experience from "./model";
@@ -16,8 +17,9 @@ class ExperienceDAO {
 
   async insertExperience(Experience:Experience){
    const collection = await database.getCollection(this.collectionName)
-   return collection.insertOne(Experience);
+   return collection.insertOne({id: id});
     }
+    
       // id cambio a numerico
     async updateExperience (experience:Experience, id:number) {
       const collection = await database.getCollection(this.collectionName)
