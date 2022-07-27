@@ -9,24 +9,32 @@ class UserDAO {
    }
 
    async saveUser(user:User){
-        const userTest = new User(user.email, user.password, user.name);
-        const collection = await database.getCollection(this.collectionName)
-        return collection.insertOne(userTest);
-    }
+    const collection = await database.getCollection(this.collectionName)
+    return collection.insertOne(user);
+}
+
     async getUser(user: User) {
       console.log(user);
       const collection = await database.getCollection(this.collectionName)
       const result = await collection.findOne({email:user.email});
       return result;
     }
+
+    // async getUserbyId(id: string) {
+    //   console.log(id);
+    //   const collection = await database.getCollection(this.collectionName)
+    //   const result = await collection.findOne({_id: id});
+    //   return result;
+    // }
+
     async getUsers(){
       const collection = await database.getCollection(this.collectionName)
       const result = await collection.find({}).project({"_id":0,"email":1,"name":1}).toArray();
       return result;
     }
-    async updateUserExp(){
+    async updateUserExp(idUser:string, idExperiencia:any){
       const collection = await database.getCollection(this.collectionName)
-      const user = await collection.findOneAndUpdate({"_id":0} , {$set: {"experiences":["62bc6437db1cb2d9803488e4"]}})
+      const user = await collection.findOneAndUpdate({"_id":idUser} , {$set: {"experiences":[idExperiencia]}})
       //Mirar mongoshell que esta cerca la cosa
       return user;
     }

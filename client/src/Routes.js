@@ -9,6 +9,7 @@ import MediosPago from './components/MediosPago';
 import DetalleExperiencia from "./components/DetalleExperiencia";
 import Carrito from "./components/Carrito";
 import Search from "./components/Search";
+import FormularioReserva from "./components/FormularioReserva";
 
 export default function Rutas () {
     let element = useRoutes([
@@ -45,6 +46,11 @@ export default function Rutas () {
       {
         element: <DetalleExperiencia/>,
         path:"/detalle/:id"
+      },
+
+      {
+        element: <FormularioReserva/>,
+        path:"/formulario/:id"
       },
       
       {

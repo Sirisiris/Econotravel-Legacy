@@ -10,6 +10,7 @@ import Content from "./LeerMás.js";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function DetalleExperiencia() {
   const { id } = useParams();
@@ -95,7 +96,7 @@ export default function DetalleExperiencia() {
               <MenuItem value={3}>3</MenuItem>
             </Select>
           </FormControl>
-
+          <Link to={`/formulario/${data.id}`}>
           <Button
             style={{
               backgroundColor: "#2e5137",
@@ -110,6 +111,7 @@ export default function DetalleExperiencia() {
           >
             Reservar
           </Button>
+          </Link>
         </Box>
       </Container>
     </section>

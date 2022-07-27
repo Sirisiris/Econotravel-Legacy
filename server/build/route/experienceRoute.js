@@ -12,6 +12,6 @@ const router = (0, express_1.Router)();
 router.get('/experiences', experienceController_1.default);
 router.get('/experiences/:id', experienceController_1.default);
 router.put('/experiences/:id', updateController_1.default);
-router.post('/experiences', insertController_1.default);
+router.post('/experiences', insertController_1.default.insertExperience);
 router.delete('/experiences/:id', deleteController_1.default);
 exports.default = router;

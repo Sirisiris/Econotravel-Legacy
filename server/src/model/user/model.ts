@@ -4,9 +4,10 @@ import UserDTO from "./dto";
 
 export default class User implements UserDTO{
     constructor(
+        public id: ObjectId,
         public email: string,
         public password: string,
-        public name: string,
+        public name?: string,
         public experiences:Array<Experience>=[],
         public rol="public",
         ) {};

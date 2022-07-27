@@ -36,10 +36,17 @@ const userController = {
             res.status(400).send(error.message);
         }
     },
-/*    reserva: async (req: Request, res: Response) => {
-        res.
-    },
-    */
+
+    reserva: async (req: Request, res: Response) => {
+        try {
+        // req.query.idExperiencias /*te devuelve objeto clave*/
+        // req.params.id /*devuelve id user*/
+        const user = await userDao.updateUserExp (req.params.id, req.query.idExperiencia);
+    } catch (error: any) {
+        res.status(400).send(error.message)
+    }
+    }
+    
 }
 
 export default userController;

@@ -38,5 +38,13 @@ class UserDAO {
             return result;
         });
     }
+    updateUserExp() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const collection = yield database_service_1.default.getCollection(this.collectionName);
+            const user = yield collection.findOneAndUpdate({ "_id": 0 }, { $set: { "experiences": ["62bc6437db1cb2d9803488e4"] } });
+            //Mirar mongoshell que esta cerca la cosa
+            return user;
+        });
+    }
 }
 exports.default = new UserDAO('users');

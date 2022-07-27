@@ -1,12 +1,28 @@
 import { Box, Container } from "@mui/system";
 import CustomSeparator from "./CustomSeparator";
 import {Typography, Button, Grid } from "@mui/material";
-
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
+import axios from "axios";
+import { Link } from "react-router-dom";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 
 export default function FormularioReserva () {
+  const { id } = useParams();
+  const [data, setData] = useState([]);
 
+  useEffect(() => {
+    console.log(process.env)
+    axios.get(
+      process.env.REACT_APP_API_URL+'/experiences').then((response) => {
+        console.log(response)
+      const item = response.data.find(
+        (dataItem) => dataItem.id === parseInt(id)
+      );
+      setData(item);
+    });
+  }, [id]);
     return (
 
 <Grid container style={{ 
@@ -25,7 +41,7 @@ export default function FormularioReserva () {
               color= "#2e5137"
               style={{fontSize: "1.5rem", fontWeight: "700", marginTop:"1em" }}>
           
-               Paseo en bicicleta por el Montseny
+          {data.title}
              </Typography>
     
      
@@ -125,20 +141,20 @@ export default function FormularioReserva () {
             <Container style= {{ display:"flex", flexDirection:"column", border: "2px solid #2e5137", width:"20em", height:"23em", marginTop:"-5em"}}>
   
 
-               <Typography variant='h2' color=" #2e5137" fontSize="1.5em"fontWeight="700" style={{marginTop:"1em"}}>250€</Typography>
+               <Typography variant='h2' color=" #2e5137" fontSize="1.5em"fontWeight="700" style={{marginTop:"1em"}}>            {data.price}€</Typography>
               <Typography variant='h2' color=" #2e5137" fontSize="1.2em" fontWeight="700" 
                style={{paddingLeft:"1.2em"}}>
-               Experiencia Reservada: Paseo en bicicleta por el Montseny.
+               Experiencia Reservada: {data.title}
               
               <Typography variant="h3" fontSize="1em" fontWeight="200">Cantidad:1
               </Typography>
               </Typography> 
-        
+
             <Button style={{ 
               backgroundColor: "#2e5137", marginTop:"2em", borderRadius:"50px", color:"white",textTransform:"none", width:"17em", margin:"auto"}} size="small">
               Pagar
              </Button> 
-    
+
             <Container style={{margin:"auto"}}>
                   
                   <Box style={{display:"flex"}}>
