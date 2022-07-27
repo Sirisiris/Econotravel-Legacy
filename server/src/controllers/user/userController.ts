@@ -22,8 +22,13 @@ const userController = {
         }
     },
     login: async (req: Request, res: Response) => {
-        res.send(jwt.generateToken(req.body.email));
-    },
+        try{
+            res.send(jwt.generateToken(req.body.email));
+    }catch (error: any){
+            res.status(400).send(error.message);
+    }
+},
+
     getAllUsers: async (req: Request, res: Response) => {
         try {
             const result = await userDao.getUsers();
