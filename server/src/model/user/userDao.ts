@@ -1,4 +1,4 @@
-import { id } from "date-fns/locale";
+import id  from "./model";
 import database from "../../services/database.service";
 import User from "./model";
 
